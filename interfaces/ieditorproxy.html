@@ -55,7 +55,7 @@
 					<a href="../modules.html">@logseq/libs</a>
 				</li>
 				<li>
-					<a href="ieditorproxy.html">IEditorProxy</a>
+					<a href="IEditorProxy.html">IEditorProxy</a>
 				</li>
 			</ul>
 			<h1>Interface IEditorProxy</h1>
@@ -90,926 +90,848 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#checkediting" class="tsd-kind-icon">check<wbr>Editing</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#editblock" class="tsd-kind-icon">edit<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#exiteditingmode" class="tsd-kind-icon">exit<wbr>Editing<wbr>Mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getblock" class="tsd-kind-icon">get<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getblockproperties" class="tsd-kind-icon">get<wbr>Block<wbr>Properties</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getblockproperty" class="tsd-kind-icon">get<wbr>Block<wbr>Property</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getcurrentblock" class="tsd-kind-icon">get<wbr>Current<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getcurrentpage" class="tsd-kind-icon">get<wbr>Current<wbr>Page</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getcurrentpageblockstree" class="tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#geteditingblockcontent" class="tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#geteditingcursorposition" class="tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getnextsiblingblock" class="tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getpage" class="tsd-kind-icon">get<wbr>Page</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getpageblockstree" class="tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#getprevioussiblingblock" class="tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#insertateditingcursor" class="tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#insertbatchblock" class="tsd-kind-icon">insert<wbr>Batch<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#insertblock" class="tsd-kind-icon">insert<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#moveblock" class="tsd-kind-icon">move<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#registerblockcontextmenu" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#registerslashcommand" class="tsd-kind-icon">register<wbr>Slash<wbr>Command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#removeblock" class="tsd-kind-icon">remove<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#removeblockproperty" class="tsd-kind-icon">remove<wbr>Block<wbr>Property</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#restoreeditingcursor" class="tsd-kind-icon">restore<wbr>Editing<wbr>Cursor</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#updateblock" class="tsd-kind-icon">update<wbr>Block</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieditorproxy.html#upsertblockproperty" class="tsd-kind-icon">upsert<wbr>Block<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#checkEditing" class="tsd-kind-icon">check<wbr>Editing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#createPage" class="tsd-kind-icon">create<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#deletePage" class="tsd-kind-icon">delete<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#editBlock" class="tsd-kind-icon">edit<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#exitEditingMode" class="tsd-kind-icon">exit<wbr>Editing<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getAllPages" class="tsd-kind-icon">get<wbr>All<wbr>Pages</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getBlock" class="tsd-kind-icon">get<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getBlockProperties" class="tsd-kind-icon">get<wbr>Block<wbr>Properties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getBlockProperty" class="tsd-kind-icon">get<wbr>Block<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getCurrentBlock" class="tsd-kind-icon">get<wbr>Current<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getCurrentPage" class="tsd-kind-icon">get<wbr>Current<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getCurrentPageBlocksTree" class="tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getEditingBlockContent" class="tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getEditingCursorPosition" class="tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getNextSiblingBlock" class="tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getPage" class="tsd-kind-icon">get<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getPageBlocksTree" class="tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#getPreviousSiblingBlock" class="tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#insertAtEditingCursor" class="tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#insertBatchBlock" class="tsd-kind-icon">insert<wbr>Batch<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#insertBlock" class="tsd-kind-icon">insert<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#moveBlock" class="tsd-kind-icon">move<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#registerBlockContextMenuItem" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#registerSlashCommand" class="tsd-kind-icon">register<wbr>Slash<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#removeBlock" class="tsd-kind-icon">remove<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#removeBlockProperty" class="tsd-kind-icon">remove<wbr>Block<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#renamePage" class="tsd-kind-icon">rename<wbr>Page</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#restoreEditingCursor" class="tsd-kind-icon">restore<wbr>Editing<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#scrollToBlockInPage" class="tsd-kind-icon">scroll<wbr>ToBlock<wbr>InPage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#updateBlock" class="tsd-kind-icon">update<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#upsertBlockProperty" class="tsd-kind-icon">upsert<wbr>Block<wbr>Property</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="checkediting" class="tsd-anchor"></a>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="checkEditing" class="tsd-anchor"></a>
 					<h3>check<wbr>Editing</h3>
-					<div class="tsd-signature tsd-kind-icon">check<wbr>Editing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L236">src/LSPlugin.ts:236</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Editing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L259">src/LSPlugin.ts:259</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="editblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createPage" class="tsd-anchor"></a>
+					<h3>create<wbr>Page</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Page<span class="tsd-signature-symbol">(</span>pageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L328">src/LSPlugin.ts:328</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pageName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> properties: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="deletePage" class="tsd-anchor"></a>
+					<h3>delete<wbr>Page</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Page<span class="tsd-signature-symbol">(</span>pageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L334">src/LSPlugin.ts:334</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pageName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="editBlock" class="tsd-anchor"></a>
 					<h3>edit<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">edit<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L317">src/LSPlugin.ts:317</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L354">src/LSPlugin.ts:354</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-symbol">{ </span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter">
-														<h5>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-													</li>
-												</ul>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-symbol">{ </span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exiteditingmode" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="exitEditingMode" class="tsd-anchor"></a>
 					<h3>exit<wbr>Editing<wbr>Mode</h3>
-					<div class="tsd-signature tsd-kind-icon">exit<wbr>Editing<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>selectBlock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L245">src/LSPlugin.ts:245</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>selectBlock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">exit<wbr>Editing<wbr>Mode<span class="tsd-signature-symbol">(</span>selectBlock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L268">src/LSPlugin.ts:268</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> selectBlock: <span class="tsd-signature-type">boolean</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> selectBlock: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getAllPages" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Pages</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Pages<span class="tsd-signature-symbol">(</span>repo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L340">src/LSPlugin.ts:340</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> repo: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getBlock" class="tsd-anchor"></a>
 					<h3>get<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L295">src/LSPlugin.ts:295</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L318">src/LSPlugin.ts:318</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getblockproperties" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getBlockProperties" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Properties</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L329">src/LSPlugin.ts:329</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Properties<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L366">src/LSPlugin.ts:366</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>block: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getblockproperty" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getBlockProperty" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Property</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Property<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L327">src/LSPlugin.ts:327</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Property<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L364">src/LSPlugin.ts:364</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>block: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>key: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getcurrentblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getCurrentBlock" class="tsd-anchor"></a>
 					<h3>get<wbr>Current<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L253">src/LSPlugin.ts:253</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L276">src/LSPlugin.ts:276</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getcurrentpage" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getCurrentPage" class="tsd-anchor"></a>
 					<h3>get<wbr>Current<wbr>Page</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L251">src/LSPlugin.ts:251</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Page<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L274">src/LSPlugin.ts:274</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getcurrentpageblockstree" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getCurrentPageBlocksTree" class="tsd-anchor"></a>
 					<h3>get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L264">src/LSPlugin.ts:264</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>get all blocks of the current page as a tree structure</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>example</dt>
-							<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">blocks</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">getCurrentPageBlocksTree</span><span style="color: #000000">()</span>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L287">src/LSPlugin.ts:287</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get all blocks of the current page as a tree structure</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">blocks</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">getCurrentPageBlocksTree</span><span style="color: #000000">()</span>
 <span style="color: #795E26">initMindMap</span><span style="color: #000000">(</span><span style="color: #001080">blocks</span><span style="color: #000000">)</span>
 </code></pre>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="geteditingblockcontent" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getEditingBlockContent" class="tsd-anchor"></a>
 					<h3>get<wbr>Editing<wbr>Block<wbr>Content</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L249">src/LSPlugin.ts:249</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L272">src/LSPlugin.ts:272</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="geteditingcursorposition" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getEditingCursorPosition" class="tsd-anchor"></a>
 					<h3>get<wbr>Editing<wbr>Cursor<wbr>Position</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockcursorposition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L247">src/LSPlugin.ts:247</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockcursorposition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#BlockCursorPosition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L270">src/LSPlugin.ts:270</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#blockcursorposition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#BlockCursorPosition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getnextsiblingblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getNextSiblingBlock" class="tsd-anchor"></a>
 					<h3>get<wbr>Next<wbr>Sibling<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L309">src/LSPlugin.ts:309</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L346">src/LSPlugin.ts:346</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getpage" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getPage" class="tsd-anchor"></a>
 					<h3>get<wbr>Page</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L300">src/LSPlugin.ts:300</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#PageIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L323">src/LSPlugin.ts:323</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcPage: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="pageentity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcPage: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#PageIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>includeChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getpageblockstree" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getPageBlocksTree" class="tsd-anchor"></a>
 					<h3>get<wbr>Page<wbr>Blocks<wbr>Tree</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L271">src/LSPlugin.ts:271</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>get all blocks for the specified page</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>the page name or uuid</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree<span class="tsd-signature-symbol">(</span>srcPage<span class="tsd-signature-symbol">: </span><a href="../modules.html#PageIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L294">src/LSPlugin.ts:294</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcPage: <a href="../modules.html#pageidentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get all blocks for the specified page</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcPage: <a href="../modules.html#PageIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">PageIdentity</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the page name or uuid</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getprevioussiblingblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getPreviousSiblingBlock" class="tsd-anchor"></a>
 					<h3>get<wbr>Previous<wbr>Sibling<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L305">src/LSPlugin.ts:305</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L342">src/LSPlugin.ts:342</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="insertateditingcursor" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="insertAtEditingCursor" class="tsd-anchor"></a>
 					<h3>insert<wbr>AtEditing<wbr>Cursor</h3>
-					<div class="tsd-signature tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L241">src/LSPlugin.ts:241</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>insert a string at the current cursor</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L264">src/LSPlugin.ts:264</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>content: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>insert a string at the current cursor</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="insertbatchblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="insertBatchBlock" class="tsd-anchor"></a>
 					<h3>insert<wbr>Batch<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">insert<wbr>Batch<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, batch<span class="tsd-signature-symbol">: </span><a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L279">src/LSPlugin.ts:279</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, batch<span class="tsd-signature-symbol">: </span><a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>Batch<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, batch<span class="tsd-signature-symbol">: </span><a href="../modules.html#IBatchBlock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#IBatchBlock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L302">src/LSPlugin.ts:302</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>batch: <a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#ibatchblock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol">[]</span></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>batch: <a href="../modules.html#IBatchBlock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol"> | </span><a href="../modules.html#IBatchBlock" class="tsd-signature-type" data-tsd-kind="Type alias">IBatchBlock</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="insertblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="insertBlock" class="tsd-anchor"></a>
 					<h3>insert<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">insert<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L273">src/LSPlugin.ts:273</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L296">src/LSPlugin.ts:296</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>content: <span class="tsd-signature-type">string</span></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="blockentity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>content: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>sibling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="moveblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="moveBlock" class="tsd-anchor"></a>
 					<h3>move<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">move<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, targetBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L311">src/LSPlugin.ts:311</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, targetBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, targetBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L348">src/LSPlugin.ts:348</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>targetBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>targetBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>before<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="registerblockcontextmenu" class="tsd-anchor"></a>
-					<h3>register<wbr>Block<wbr>Context<wbr>Menu</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L229">src/LSPlugin.ts:229</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>register a custom command in the block context menu (triggered by right clicking the block dot)</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>displayed name of command</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>can be a single callback function to run when the command is called</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="registerBlockContextMenuItem" class="tsd-anchor"></a>
+					<h3>register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockCommandCallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L252">src/LSPlugin.ts:252</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>tag: <span class="tsd-signature-type">string</span></h5>
-											</li>
-											<li>
-												<h5>action: <a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>register a custom command in the block context menu (triggered by right clicking the block dot)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tag: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>displayed name of command</p>
+									</div>
+								</li>
+								<li>
+									<h5>action: <a href="../modules.html#BlockCommandCallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>can be a single callback function to run when the command is called</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="registerslashcommand" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="registerSlashCommand" class="tsd-anchor"></a>
 					<h3>register<wbr>Slash<wbr>Command</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>Slash<wbr>Command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span>cmd<span class="tsd-signature-symbol">: </span><a href="../modules.html#slashcommandactioncmd" class="tsd-signature-type" data-tsd-kind="Type alias">SlashCommandActionCmd</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L219">src/LSPlugin.ts:219</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>register a custom command which will be added to the Logseq slash command list</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>displayed name of command</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>can be a single callback function to run when the command is called, or an array of fixed commands with arguments</p>
-							</dd>
-							<dt>example</dt>
-							<dd><pre><code class="language-ts"><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">registerSlashCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Say Hi&quot;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Slash<wbr>Command<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockCommandCallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span>cmd<span class="tsd-signature-symbol">: </span><a href="../modules.html#SlashCommandActionCmd" class="tsd-signature-type" data-tsd-kind="Type alias">SlashCommandActionCmd</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L242">src/LSPlugin.ts:242</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>register a custom command which will be added to the Logseq slash command list</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">registerSlashCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Say Hi&quot;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Hi!&#039;</span><span style="color: #000000">)</span>
 <span style="color: #000000">})</span>
 </code></pre>
-							</dd>
-							<dt>example</dt>
-							<dd><pre><code class="language-ts"><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">registerSlashCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;💥 Big Bang&quot;</span><span style="color: #000000">, [</span>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #001080">logseq</span><span style="color: #000000">.</span><span style="color: #001080">Editor</span><span style="color: #000000">.</span><span style="color: #795E26">registerSlashCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;💥 Big Bang&quot;</span><span style="color: #000000">, [</span>
 <span style="color: #000000">  [</span><span style="color: #A31515">&quot;editor/hook&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;customCallback&quot;</span><span style="color: #000000">],</span>
 <span style="color: #000000">  [</span><span style="color: #A31515">&quot;editor/clear-current-slash&quot;</span><span style="color: #000000">],</span>
 <span style="color: #000000">]);</span>
 </code></pre>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span>cmd<span class="tsd-signature-symbol">: </span><a href="../modules.html#slashcommandactioncmd" class="tsd-signature-type" data-tsd-kind="Type alias">SlashCommandActionCmd</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>tag: <span class="tsd-signature-type">string</span></h5>
-											</li>
-											<li>
-												<h5>action: <a href="../modules.html#blockcommandcallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span>cmd<span class="tsd-signature-symbol">: </span><a href="../modules.html#slashcommandactioncmd" class="tsd-signature-type" data-tsd-kind="Type alias">SlashCommandActionCmd</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tag: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>displayed name of command</p>
+									</div>
+								</li>
+								<li>
+									<h5>action: <a href="../modules.html#BlockCommandCallback" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCommandCallback</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span>cmd<span class="tsd-signature-symbol">: </span><a href="../modules.html#SlashCommandActionCmd" class="tsd-signature-type" data-tsd-kind="Type alias">SlashCommandActionCmd</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>can be a single callback function to run when the command is called, or an array of fixed commands with arguments</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="removeblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removeBlock" class="tsd-anchor"></a>
 					<h3>remove<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">remove<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L291">src/LSPlugin.ts:291</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L314">src/LSPlugin.ts:314</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="removeblockproperty" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removeBlockProperty" class="tsd-anchor"></a>
 					<h3>remove<wbr>Block<wbr>Property</h3>
-					<div class="tsd-signature tsd-kind-icon">remove<wbr>Block<wbr>Property<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L325">src/LSPlugin.ts:325</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Block<wbr>Property<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L362">src/LSPlugin.ts:362</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>block: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>key: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="restoreeditingcursor" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="renamePage" class="tsd-anchor"></a>
+					<h3>rename<wbr>Page</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">rename<wbr>Page<span class="tsd-signature-symbol">(</span>oldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, newName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L338">src/LSPlugin.ts:338</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>newName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="restoreEditingCursor" class="tsd-anchor"></a>
 					<h3>restore<wbr>Editing<wbr>Cursor</h3>
-					<div class="tsd-signature tsd-kind-icon">restore<wbr>Editing<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L243">src/LSPlugin.ts:243</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Editing<wbr>Cursor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L266">src/LSPlugin.ts:266</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="updateblock" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="scrollToBlockInPage" class="tsd-anchor"></a>
+					<h3>scroll<wbr>ToBlock<wbr>InPage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>ToBlock<wbr>InPage<span class="tsd-signature-symbol">(</span>pageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, blockId<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L368">src/LSPlugin.ts:368</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pageName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>blockId: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updateBlock" class="tsd-anchor"></a>
 					<h3>update<wbr>Block</h3>
-					<div class="tsd-signature tsd-kind-icon">update<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L285">src/LSPlugin.ts:285</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Block<span class="tsd-signature-symbol">(</span>srcBlock<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L308">src/LSPlugin.ts:308</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>srcBlock: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>content: <span class="tsd-signature-type">string</span></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>srcBlock: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>content: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="upsertblockproperty" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="upsertBlockProperty" class="tsd-anchor"></a>
 					<h3>upsert<wbr>Block<wbr>Property</h3>
-					<div class="tsd-signature tsd-kind-icon">upsert<wbr>Block<wbr>Property<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a94bd64c/libs/src/LSPlugin.ts#L319">src/LSPlugin.ts:319</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">upsert<wbr>Block<wbr>Property<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c2606f58/libs/src/LSPlugin.ts#L356">src/LSPlugin.ts:356</a></li>
 								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>block: <a href="../modules.html#blockidentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
-											</li>
-											<li>
-												<h5>key: <span class="tsd-signature-type">string</span></h5>
-											</li>
-											<li>
-												<h5>value: <span class="tsd-signature-type">any</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <a href="../modules.html#BlockIdentity" class="tsd-signature-type" data-tsd-kind="Type alias">BlockIdentity</a></h5>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -1026,85 +948,100 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="ieditorproxy.html" class="tsd-kind-icon">IEditor<wbr>Proxy</a>
+						<a href="IEditorProxy.html" class="tsd-kind-icon">IEditor<wbr>Proxy</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#checkediting" class="tsd-kind-icon">check<wbr>Editing</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#checkEditing" class="tsd-kind-icon">check<wbr>Editing</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#editblock" class="tsd-kind-icon">edit<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#createPage" class="tsd-kind-icon">create<wbr>Page</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#exiteditingmode" class="tsd-kind-icon">exit<wbr>Editing<wbr>Mode</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#deletePage" class="tsd-kind-icon">delete<wbr>Page</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getblock" class="tsd-kind-icon">get<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#editBlock" class="tsd-kind-icon">edit<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getblockproperties" class="tsd-kind-icon">get<wbr>Block<wbr>Properties</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#exitEditingMode" class="tsd-kind-icon">exit<wbr>Editing<wbr>Mode</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getblockproperty" class="tsd-kind-icon">get<wbr>Block<wbr>Property</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getAllPages" class="tsd-kind-icon">get<wbr>All<wbr>Pages</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getcurrentblock" class="tsd-kind-icon">get<wbr>Current<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getBlock" class="tsd-kind-icon">get<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getcurrentpage" class="tsd-kind-icon">get<wbr>Current<wbr>Page</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getBlockProperties" class="tsd-kind-icon">get<wbr>Block<wbr>Properties</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getcurrentpageblockstree" class="tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getBlockProperty" class="tsd-kind-icon">get<wbr>Block<wbr>Property</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#geteditingblockcontent" class="tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getCurrentBlock" class="tsd-kind-icon">get<wbr>Current<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#geteditingcursorposition" class="tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getCurrentPage" class="tsd-kind-icon">get<wbr>Current<wbr>Page</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getnextsiblingblock" class="tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getCurrentPageBlocksTree" class="tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Blocks<wbr>Tree</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getpage" class="tsd-kind-icon">get<wbr>Page</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getEditingBlockContent" class="tsd-kind-icon">get<wbr>Editing<wbr>Block<wbr>Content</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getpageblockstree" class="tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getEditingCursorPosition" class="tsd-kind-icon">get<wbr>Editing<wbr>Cursor<wbr>Position</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#getprevioussiblingblock" class="tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getNextSiblingBlock" class="tsd-kind-icon">get<wbr>Next<wbr>Sibling<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#insertateditingcursor" class="tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getPage" class="tsd-kind-icon">get<wbr>Page</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#insertbatchblock" class="tsd-kind-icon">insert<wbr>Batch<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getPageBlocksTree" class="tsd-kind-icon">get<wbr>Page<wbr>Blocks<wbr>Tree</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#insertblock" class="tsd-kind-icon">insert<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#getPreviousSiblingBlock" class="tsd-kind-icon">get<wbr>Previous<wbr>Sibling<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#moveblock" class="tsd-kind-icon">move<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#insertAtEditingCursor" class="tsd-kind-icon">insert<wbr>AtEditing<wbr>Cursor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#registerblockcontextmenu" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#insertBatchBlock" class="tsd-kind-icon">insert<wbr>Batch<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#registerslashcommand" class="tsd-kind-icon">register<wbr>Slash<wbr>Command</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#insertBlock" class="tsd-kind-icon">insert<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#removeblock" class="tsd-kind-icon">remove<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#moveBlock" class="tsd-kind-icon">move<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#removeblockproperty" class="tsd-kind-icon">remove<wbr>Block<wbr>Property</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#registerBlockContextMenuItem" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#restoreeditingcursor" class="tsd-kind-icon">restore<wbr>Editing<wbr>Cursor</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#registerSlashCommand" class="tsd-kind-icon">register<wbr>Slash<wbr>Command</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#updateblock" class="tsd-kind-icon">update<wbr>Block</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#removeBlock" class="tsd-kind-icon">remove<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ieditorproxy.html#upsertblockproperty" class="tsd-kind-icon">upsert<wbr>Block<wbr>Property</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#removeBlockProperty" class="tsd-kind-icon">remove<wbr>Block<wbr>Property</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#renamePage" class="tsd-kind-icon">rename<wbr>Page</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#restoreEditingCursor" class="tsd-kind-icon">restore<wbr>Editing<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#scrollToBlockInPage" class="tsd-kind-icon">scroll<wbr>ToBlock<wbr>InPage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#updateBlock" class="tsd-kind-icon">update<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#upsertBlockProperty" class="tsd-kind-icon">upsert<wbr>Block<wbr>Property</a>
 							</li>
 						</ul>
 					</li>
