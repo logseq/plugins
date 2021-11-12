@@ -90,6 +90,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="IEditorProxy.html#onInputSelectionEnd" class="tsd-kind-icon">on<wbr>Input<wbr>Selection<wbr>End</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#checkEditing" class="tsd-kind-icon">check<wbr>Editing</a></li>
@@ -114,6 +120,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#insertBatchBlock" class="tsd-kind-icon">insert<wbr>Batch<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#insertBlock" class="tsd-kind-icon">insert<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#moveBlock" class="tsd-kind-icon">move<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#openInRightSidebar" class="tsd-kind-icon">open<wbr>InRight<wbr>Sidebar</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#registerBlockContextMenuItem" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#registerSlashCommand" class="tsd-kind-icon">register<wbr>Slash<wbr>Command</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="IEditorProxy.html#removeBlock" class="tsd-kind-icon">remove<wbr>Block</a></li>
@@ -129,6 +136,19 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onInputSelectionEnd" class="tsd-anchor"></a>
+					<h3>on<wbr>Input<wbr>Selection<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Input<wbr>Selection<wbr>End<span class="tsd-signature-symbol">:</span> <a href="../modules.html#IUserHook" class="tsd-signature-type" data-tsd-kind="Type alias">IUserHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>caret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#IUserOffHook" class="tsd-signature-type" data-tsd-kind="Type alias">IUserOffHook</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L424">src/LSPlugin.ts:424</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="checkEditing" class="tsd-anchor"></a>
@@ -140,7 +160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L265">src/LSPlugin.ts:265</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L307">src/LSPlugin.ts:307</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -151,13 +171,13 @@
 					<a name="createPage" class="tsd-anchor"></a>
 					<h3>create<wbr>Page</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Page<span class="tsd-signature-symbol">(</span>pageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Page<span class="tsd-signature-symbol">(</span>pageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>journal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L334">src/LSPlugin.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L376">src/LSPlugin.ts:376</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,7 +191,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>createFirstBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;markdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;org&quot;</span><span class="tsd-signature-symbol">; </span>journal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>redirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -188,7 +208,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L340">src/LSPlugin.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L382">src/LSPlugin.ts:382</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -211,7 +231,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L360">src/LSPlugin.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L402">src/LSPlugin.ts:402</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -242,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L274">src/LSPlugin.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L316">src/LSPlugin.ts:316</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L346">src/LSPlugin.ts:346</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L388">src/LSPlugin.ts:388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,7 +308,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L324">src/LSPlugin.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L366">src/LSPlugin.ts:366</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -314,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L372">src/LSPlugin.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L414">src/LSPlugin.ts:414</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -337,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L370">src/LSPlugin.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L412">src/LSPlugin.ts:412</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L282">src/LSPlugin.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L324">src/LSPlugin.ts:324</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -380,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L280">src/LSPlugin.ts:280</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L322">src/LSPlugin.ts:322</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="BlockEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">BlockEntity</a><span class="tsd-signature-symbol"> | </span><a href="PageEntity.html" class="tsd-signature-type" data-tsd-kind="Interface">PageEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -397,7 +417,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L293">src/LSPlugin.ts:293</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L335">src/LSPlugin.ts:335</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +446,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L278">src/LSPlugin.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L320">src/LSPlugin.ts:320</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -443,7 +463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L276">src/LSPlugin.ts:276</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L318">src/LSPlugin.ts:318</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#BlockCursorPosition" class="tsd-signature-type" data-tsd-kind="Type alias">BlockCursorPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -460,7 +480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L352">src/LSPlugin.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L394">src/LSPlugin.ts:394</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -483,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L329">src/LSPlugin.ts:329</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L371">src/LSPlugin.ts:371</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -509,7 +529,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L300">src/LSPlugin.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L342">src/LSPlugin.ts:342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,7 +560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L348">src/LSPlugin.ts:348</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L390">src/LSPlugin.ts:390</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -563,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L270">src/LSPlugin.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L312">src/LSPlugin.ts:312</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -591,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L308">src/LSPlugin.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L350">src/LSPlugin.ts:350</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -620,7 +640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L302">src/LSPlugin.ts:302</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L344">src/LSPlugin.ts:344</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -649,7 +669,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L354">src/LSPlugin.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L396">src/LSPlugin.ts:396</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -669,6 +689,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="openInRightSidebar" class="tsd-anchor"></a>
+					<h3>open<wbr>InRight<wbr>Sidebar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>InRight<wbr>Sidebar<span class="tsd-signature-symbol">(</span>uuid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L421">src/LSPlugin.ts:421</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uuid: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="registerBlockContextMenuItem" class="tsd-anchor"></a>
 					<h3>register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -678,7 +721,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L258">src/LSPlugin.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L300">src/LSPlugin.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -715,7 +758,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L248">src/LSPlugin.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L290">src/LSPlugin.ts:290</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -767,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L320">src/LSPlugin.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L362">src/LSPlugin.ts:362</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -790,7 +833,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L368">src/LSPlugin.ts:368</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L410">src/LSPlugin.ts:410</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -816,7 +859,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L344">src/LSPlugin.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L386">src/LSPlugin.ts:386</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -842,7 +885,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L272">src/LSPlugin.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L314">src/LSPlugin.ts:314</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -859,7 +902,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L374">src/LSPlugin.ts:374</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L416">src/LSPlugin.ts:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -885,7 +928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L314">src/LSPlugin.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L356">src/LSPlugin.ts:356</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -914,7 +957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/logseq/logseq/blob/c4a68927/libs/src/LSPlugin.ts#L362">src/LSPlugin.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/logseq/logseq/blob/a9a907f1/libs/src/LSPlugin.ts#L404">src/LSPlugin.ts:404</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -950,6 +993,9 @@
 					<li class="current tsd-kind-interface">
 						<a href="IEditorProxy.html" class="tsd-kind-icon">IEditor<wbr>Proxy</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#onInputSelectionEnd" class="tsd-kind-icon">on<wbr>Input<wbr>Selection<wbr>End</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="IEditorProxy.html#checkEditing" class="tsd-kind-icon">check<wbr>Editing</a>
 							</li>
@@ -1015,6 +1061,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="IEditorProxy.html#moveBlock" class="tsd-kind-icon">move<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="IEditorProxy.html#openInRightSidebar" class="tsd-kind-icon">open<wbr>InRight<wbr>Sidebar</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="IEditorProxy.html#registerBlockContextMenuItem" class="tsd-kind-icon">register<wbr>Block<wbr>Context<wbr>Menu<wbr>Item</a>
