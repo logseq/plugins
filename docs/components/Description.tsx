@@ -61,6 +61,7 @@ export function Description (
       <iframe
         ref={iframeRef}
         className={'w-full min-h-fit px-5'}
+        style={{ colorScheme: 'light' }}
         src={`${lspApisEndpoint}/${entryHtml}.html#${props.name}`}></iframe>
     </div>
   )

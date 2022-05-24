@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const getAllPages: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const getAllPages: NextPage = () => {
           name="getAllPages"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="getAllPages"
+       />
       </div>
   )
 }

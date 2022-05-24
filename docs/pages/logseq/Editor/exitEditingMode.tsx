@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const exitEditingMode: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const exitEditingMode: NextPage = () => {
           name="exitEditingMode"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="exitEditingMode"
+       />
       </div>
   )
 }

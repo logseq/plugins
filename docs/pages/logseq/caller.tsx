@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const caller: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const caller: NextPage = () => {
           name="caller"
           comment="Duplex message caller"
         />
+
+       <Discuss
+          ns="."
+          name="caller"
+       />
       </div>
   )
 }

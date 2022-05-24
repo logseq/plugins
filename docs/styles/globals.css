@@ -64,8 +64,12 @@ aside dl {
 }
 
 aside dt {
+  @apply bg-white;
+
   font-size: 15px;
   font-weight: bold;
+  position: sticky;
+  top: 0;
 }
 
 aside dt, aside dd {
@@ -77,6 +81,31 @@ aside dd {
 }
 
 main > .r {
+  @apply bg-white dark:bg-black;
+
   flex: 1;
-  background-color: #f8fdf8;
+
+}
+
+.main-page-content {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.utterances {
+  max-width: unset;
+  margin: 0 30px;
+}
+
+.utterances-frame {
+  color-scheme: light;
+  position: static;
+  /* left: 0; */
+  /* right: 0; */
+  min-width: unset;
+  max-width: unset;
+  height: 100%;
+  border: 0;
+  width: 90%;
 }

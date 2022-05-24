@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const addListener: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const addListener: NextPage = () => {
           name="addListener"
           comment=""
         />
+
+       <Discuss
+          ns="."
+          name="addListener"
+       />
       </div>
   )
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const getPagesTreeFromNamespace: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const getPagesTreeFromNamespace: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="Editor"
+          name="getPagesTreeFromNamespace"
+       />
       </div>
   )
 }

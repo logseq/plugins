@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const setBlockCollapsed: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const setBlockCollapsed: NextPage = () => {
           name="setBlockCollapsed"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="setBlockCollapsed"
+       />
       </div>
   )
 }

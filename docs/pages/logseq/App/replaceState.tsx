@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const replaceState: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const replaceState: NextPage = () => {
           name="replaceState"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="replaceState"
+       />
       </div>
   )
 }

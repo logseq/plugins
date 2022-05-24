@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onThemeModeChanged: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onThemeModeChanged: NextPage = () => {
           name="onThemeModeChanged"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="onThemeModeChanged"
+       />
       </div>
   )
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onChanged: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onChanged: NextPage = () => {
           name="onChanged"
           comment="Hook all transaction data of DB"
         />
+
+       <Discuss
+          ns="DB"
+          name="onChanged"
+       />
       </div>
   )
 }

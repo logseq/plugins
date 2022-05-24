@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const registerBlockContextMenuItem: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const registerBlockContextMenuItem: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="Editor"
+          name="registerBlockContextMenuItem"
+       />
       </div>
   )
 }

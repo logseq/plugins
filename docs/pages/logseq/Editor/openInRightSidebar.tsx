@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const openInRightSidebar: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const openInRightSidebar: NextPage = () => {
           name="openInRightSidebar"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="openInRightSidebar"
+       />
       </div>
   )
 }

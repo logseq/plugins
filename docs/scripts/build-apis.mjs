@@ -20,17 +20,24 @@ const apiMaps = {
   'IDBProxy': {},
   'IGitProxy': {},
   'IUIProxy': {},
-  'IAssetsProxy': {}
+  'IAssetsProxy': {},
+
+  'FileStorage': {}
 }
 
 function getNsKey (name) {
-  return name.substring(1).replace('Proxy', '')
+  if (name?.includes('Proxy')) {
+    return name.substring(1).replace('Proxy', '')
+  } else {
+    return name
+  }
 }
 
 function shouldIgnoreItem (name) {
   return name &&
     (name.startsWith('_') ||
       ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
+        'FileStorage', 'Experiments',
         'emit', 'on', 'off', 'once'].some(it => {
         return name.toLowerCase() === it.toLowerCase()
       }))

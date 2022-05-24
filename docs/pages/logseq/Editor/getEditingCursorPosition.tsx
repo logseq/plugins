@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const getEditingCursorPosition: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const getEditingCursorPosition: NextPage = () => {
           name="getEditingCursorPosition"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="getEditingCursorPosition"
+       />
       </div>
   )
 }

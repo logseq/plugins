@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const quit: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const quit: NextPage = () => {
           name="quit"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="quit"
+       />
       </div>
   )
 }

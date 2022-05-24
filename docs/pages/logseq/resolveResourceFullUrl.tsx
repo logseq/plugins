@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const resolveResourceFullUrl: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const resolveResourceFullUrl: NextPage = () => {
           name="resolveResourceFullUrl"
           comment=""
         />
+
+       <Discuss
+          ns="."
+          name="resolveResourceFullUrl"
+       />
       </div>
   )
 }

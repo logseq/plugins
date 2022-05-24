@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const saveIgnoreFile: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const saveIgnoreFile: NextPage = () => {
           name="saveIgnoreFile"
           comment=""
         />
+
+       <Discuss
+          ns="Git"
+          name="saveIgnoreFile"
+       />
       </div>
   )
 }

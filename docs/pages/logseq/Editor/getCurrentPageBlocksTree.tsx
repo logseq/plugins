@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const getCurrentPageBlocksTree: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const getCurrentPageBlocksTree: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="Editor"
+          name="getCurrentPageBlocksTree"
+       />
       </div>
   )
 }

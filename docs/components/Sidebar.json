@@ -1,7 +1,5 @@
 {
   "logseq": [
-    "Experiments",
-    "FileStorage",
     "baseInfo",
     "caller",
     "connected",
@@ -123,5 +121,6 @@
   ],
   "Assets": [
     "listFilesOfCurrentGraph"
-  ]
+  ],
+  "FileStorage": []
 }

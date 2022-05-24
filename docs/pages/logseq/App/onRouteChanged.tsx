@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onRouteChanged: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onRouteChanged: NextPage = () => {
           name="onRouteChanged"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="onRouteChanged"
+       />
       </div>
   )
 }

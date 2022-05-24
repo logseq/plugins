@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const registerCommandShortcut: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const registerCommandShortcut: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="App"
+          name="registerCommandShortcut"
+       />
       </div>
   )
 }

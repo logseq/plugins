@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const listFilesOfCurrentGraph: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const listFilesOfCurrentGraph: NextPage = () => {
           name="listFilesOfCurrentGraph"
           comment=""
         />
+
+       <Discuss
+          ns="Assets"
+          name="listFilesOfCurrentGraph"
+       />
       </div>
   )
 }

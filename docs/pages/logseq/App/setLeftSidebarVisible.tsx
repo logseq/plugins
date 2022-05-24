@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const setLeftSidebarVisible: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const setLeftSidebarVisible: NextPage = () => {
           name="setLeftSidebarVisible"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="setLeftSidebarVisible"
+       />
       </div>
   )
 }

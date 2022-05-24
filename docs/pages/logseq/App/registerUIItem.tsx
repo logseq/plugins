@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const registerUIItem: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const registerUIItem: NextPage = () => {
           name="registerUIItem"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="registerUIItem"
+       />
       </div>
   )
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const renamePage: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const renamePage: NextPage = () => {
           name="renamePage"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="renamePage"
+       />
       </div>
   )
 }

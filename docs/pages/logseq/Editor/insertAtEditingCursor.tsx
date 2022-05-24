@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const insertAtEditingCursor: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const insertAtEditingCursor: NextPage = () => {
           name="insertAtEditingCursor"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="insertAtEditingCursor"
+       />
       </div>
   )
 }

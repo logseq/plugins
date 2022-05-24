@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const removeBlockProperty: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const removeBlockProperty: NextPage = () => {
           name="removeBlockProperty"
           comment=""
         />
+
+       <Discuss
+          ns="Editor"
+          name="removeBlockProperty"
+       />
       </div>
   )
 }

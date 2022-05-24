@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onBlockRendererSlotted: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onBlockRendererSlotted: NextPage = () => {
           name="onBlockRendererSlotted"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="onBlockRendererSlotted"
+       />
       </div>
   )
 }

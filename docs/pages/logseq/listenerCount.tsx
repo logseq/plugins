@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const listenerCount: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const listenerCount: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="."
+          name="listenerCount"
+       />
       </div>
   )
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const loadIgnoreFile: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const loadIgnoreFile: NextPage = () => {
           name="loadIgnoreFile"
           comment=""
         />
+
+       <Discuss
+          ns="Git"
+          name="loadIgnoreFile"
+       />
       </div>
   )
 }

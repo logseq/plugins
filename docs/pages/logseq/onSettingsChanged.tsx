@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onSettingsChanged: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onSettingsChanged: NextPage = () => {
           name="onSettingsChanged"
           comment=""
         />
+
+       <Discuss
+          ns="."
+          name="onSettingsChanged"
+       />
       </div>
   )
 }

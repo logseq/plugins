@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const queryElementById: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const queryElementById: NextPage = () => {
           name="queryElementById"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="queryElementById"
+       />
       </div>
   )
 }

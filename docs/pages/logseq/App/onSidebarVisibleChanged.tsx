@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onSidebarVisibleChanged: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onSidebarVisibleChanged: NextPage = () => {
           name="onSidebarVisibleChanged"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="onSidebarVisibleChanged"
+       />
       </div>
   )
 }

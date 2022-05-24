@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const getCurrentGraph: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const getCurrentGraph: NextPage = () => {
           name="getCurrentGraph"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="getCurrentGraph"
+       />
       </div>
   )
 }

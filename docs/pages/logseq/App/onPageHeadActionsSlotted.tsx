@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const onPageHeadActionsSlotted: NextPage = () => {
   return (
@@ -9,6 +10,11 @@ const onPageHeadActionsSlotted: NextPage = () => {
           name="onPageHeadActionsSlotted"
           comment=""
         />
+
+       <Discuss
+          ns="App"
+          name="onPageHeadActionsSlotted"
+       />
       </div>
   )
 }

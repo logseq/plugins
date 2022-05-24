@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import { Description } from '@/components/Description'
+import { Discuss } from '@/components/Discuss'
 
 const datascriptQuery: NextPage = () => {
   return (
@@ -10,6 +11,11 @@ const datascriptQuery: NextPage = () => {
           comment="
 "
         />
+
+       <Discuss
+          ns="DB"
+          name="datascriptQuery"
+       />
       </div>
   )
 }
