@@ -1,9 +1,6 @@
 import useScript from '../helpers/useScript'
 import { useEffect } from 'react'
 
-const isDarkScheme = global?.window?.matchMedia &&
-  global?.window?.matchMedia('(prefers-color-scheme: dark)').matches
-
 export function Discuss (
   props: { ns: string, name: string }
 ) {
@@ -13,7 +10,7 @@ export function Discuss (
     {
       'repo': 'xyhp915/plugins',
       'issue-term': `🧩 ${props.ns === '.' ? 'logseq' : `logseq.${props.ns}`}.${props.name}`,
-      'theme': `github-${isDarkScheme ? 'dark' : 'light'}`,
+      'theme': `preferred-color-scheme`,
       'crossorigin': 'anonymous'
     }, '#discuss-container')
 

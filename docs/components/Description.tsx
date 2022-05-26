@@ -1,3 +1,4 @@
+import { Box } from '@primer/react'
 import { useEffect, useRef } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
 
@@ -37,6 +38,7 @@ export function Description (
         const height = data.payload?.height
         if (!height) return
         iframeRef.current!.style.height = height + 'px'
+        iframeRef.current!.style.visibility = 'visible'
       } catch (e) {
         console.log(e)
       }
@@ -52,17 +54,21 @@ export function Description (
   const entryHtml = props.ns === '.' ?
     'ILSPluginUser' : `I${props.ns}Proxy`
   return (
-    <div>
-      <div className={'p-4'}>
+    <Box className={'main-description mx-8'}
+         borderBottomColor={'border.default'}
+    >
+      <div className={'p-4'} style={{ margin: '-10px -30px' }}>
         <code>logseq</code>
         {props.ns != '.' && (<code>.{props.ns}</code>)}
       </div>
 
-      <iframe
-        ref={iframeRef}
-        className={'w-full min-h-fit px-5'}
-        style={{ colorScheme: 'light' }}
-        src={`${lspApisEndpoint}/${entryHtml}.html#${props.name}`}></iframe>
-    </div>
+      <Box className={'rounded-xl'}>
+        <iframe
+          ref={iframeRef}
+          className={'w-full min-h-fit px-5'}
+          style={{ colorScheme: 'light' }}
+          src={`${lspApisEndpoint}/${entryHtml}.html#${props.name}`}></iframe>
+      </Box>
+    </Box>
   )
 }

@@ -5,13 +5,16 @@ export function Sidebar () {
   return (
     <aside className={'nav'}>
       {Object.entries(sidebarData).map(([k, v]) => {
+        const isRoot = (k === 'logseq')
         return (
           <dl className={'nav-item'} key={k}>
-            <dt className={'p-1 hover:bg-gray-100'} id={'ns-' + k}>{k}</dt>
+            <dt className={'py-1 px-2'} id={'ns-' + k}>{!isRoot && 'logseq.'}{k}</dt>
             {v.map(it => {
+              const href = `/${ isRoot ? '' : 'logseq/'}${k}/${it}`
               return (
-                <Link key={it} href={`/${k === 'logseq' ? '' : 'logseq/'}${k}/${it}`} scroll={false}>
-                  <dd className={'p-1 hover:bg-gray-100'} id={k + '-' + it}>
+                <Link key={it} href={href} scroll={false}>
+                  <dd className={`p-1 ${global?.location?.href?.endsWith(href) ? 'active' : ''}`}
+                      id={k + '-' + it}>
                   <span className={'pl-2'}>
                     {it}
                   </span>
