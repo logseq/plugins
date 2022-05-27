@@ -7,11 +7,9 @@ const PAGES_ROOT = path.resolve('../pages')
 const LS_ROOT = path.join(PAGES_ROOT, 'logseq')
 const API_FILE = path.resolve('../../apis/out.json')
 const TEMPLATE_PAGE = path.join(PAGES_ROOT, '_page.tpl')
-const TEMPLATE_SIDEBAR = path.join(PAGES_ROOT, '_sidebar.tpl')
 
 const apisData = JSON.parse(fs.readFileSync(API_FILE).toString())
 const pageTemplateContent = fs.readFileSync(TEMPLATE_PAGE).toString()
-const sidebarTemplateContent = fs.readFileSync(TEMPLATE_SIDEBAR).toString()
 
 const apiMaps = {
   'ILSPluginUser': {},
@@ -38,7 +36,8 @@ function shouldIgnoreItem (name) {
     (name.startsWith('_') ||
       ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
         'FileStorage', 'Experiments',
-        'emit', 'on', 'off', 'once'].some(it => {
+        'emit', 'on', 'off', 'once', 'listeners'
+      ].some(it => {
         return name.toLowerCase() === it.toLowerCase()
       }))
 }
@@ -89,7 +88,15 @@ function build () {
   const navigateData = Object.entries(apiMaps)
     .reduce((acc, [name, v]) => {
       const ns = (rootKey === name) ? 'logseq' : getNsKey(name)
-      acc[ns] = Object.keys(v).filter(name => !shouldIgnoreItem(name))
+      const values = Object.entries(v)
+        .reduce((acc, [k, p]) => {
+          if (!shouldIgnoreItem(k)) {
+            acc.push([k, p.kindString])
+          }
+          return acc
+        }, [])
+        // .filter(name => !shouldIgnoreItem(name))
+      acc[ns] = values
       return acc
     }, {})
 

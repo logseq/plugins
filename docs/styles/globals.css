@@ -4,6 +4,8 @@
 
 html,
 body {
+  @apply dark:text-gray-800;
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -33,7 +35,6 @@ html ::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -41,6 +42,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --lsp-header-height: 48px;
+  --lsp-content-max-width: 996px;
 }
 
 .main-container {
@@ -52,13 +58,11 @@ a {
 
 .main-container > .l {
   min-height: 100vh;
-  overflow-y: auto;
-  overflow: overlay;
   border-right-width: 1px;
   border-right-style: solid;
 }
 
-.main-container > .l aside {
+.main-container > .l .nav-sidebar-content {
   width: 280px;
   padding-bottom: 20px;
 }
@@ -66,23 +70,45 @@ a {
 .main-description {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  max-width: 930px;
+  max-width: calc(var(--lsp-content-max-width) - 50px);
 }
 
 .main-description iframe {
   visibility: hidden;
+  margin: 0 -15px;
+}
+
+.main-description-header {
+  height: var(--lsp-header-height);
+}
+
+.nav-sidebar-container {
+  position: relative;
+  padding-top: var(--lsp-header-height);
+}
+
+.nav-sidebar-header {
+  height: var(--lsp-header-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1px);
 }
 
 .nav-item {
 
 }
 
-aside dl {
+.nav-sidebar-content {
+  overflow-y: scroll;
+}
+
+.nav-sidebar-content dl {
   user-select: none;
 }
 
-aside dt {
-  @apply bg-white dark:bg-black/90;
+.nav-sidebar-content dt {
+  @apply bg-gray-50 dark:bg-black/90;
 
   font-size: 16px;
   font-weight: bold;
@@ -90,17 +116,17 @@ aside dt {
   top: 0;
 }
 
-aside dt, aside dd {
+.nav-sidebar-content dt, .nav-sidebar-content dd {
   cursor: pointer;
 }
 
-aside dd {
+.nav-sidebar-content dd {
   @apply hover:bg-gray-100 dark:hover:bg-gray-800/50;
 
   font-size: 14px;
 }
 
-aside dd.active {
+.nav-sidebar-content dd.active {
   @apply bg-blue-300/25;
 }
 
@@ -133,5 +159,15 @@ aside dd.active {
 #discuss-container {
   @apply px-10 mb-60;
 
-  max-width: 980px;
+  max-width: var(--lsp-content-max-width);
+}
+
+
+.lsp-search-dialog-wrap {
+  align-items: flex-start !important;
+  padding-top: 128px;
+}
+
+.lsp-search-dialog {
+  border-radius: 12px !important;
 }

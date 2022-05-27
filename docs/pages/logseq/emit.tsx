@@ -1,28 +1,23 @@
 import { NextPage } from 'next'
-import { Description, DescriptionHeader } from '@/components/Description'
+import { Description } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const ready: NextPage = () => {
+const emit: NextPage = () => {
   return (
       <div className="main-page-content">
-        <DescriptionHeader
-          ns="."
-          name="ready"
-         />
-
         <Description
           ns="."
-          name="ready"
+          name="emit"
           comment="
 "
         />
 
        <Discuss
           ns="."
-          name="ready"
+          name="emit"
        />
       </div>
   )
 }
 
-export default ready
+export default emit

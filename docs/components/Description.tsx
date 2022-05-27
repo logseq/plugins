@@ -1,6 +1,7 @@
 import { Box } from '@primer/react'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
+import { LogoGithubIcon } from '@primer/octicons-react'
 
 type DescriptionProps = {
   ns: string,
@@ -8,9 +9,46 @@ type DescriptionProps = {
   comment: string
 }
 
+export function Skeleton () {
+  return (
+    <div className="relative p-4 w-full bg-white rounded-lg overflow-hidden -bottom-5">
+      <div className="animate-pulse flex space-x-4">
+        <div className="flex-1 space-y-4 py-1">
+          <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+          <div className="space-y-2">
+            <div className="h-4 bg-gray-200 rounded"></div>
+            <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+            <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function DescriptionHeader (
+  props: Partial<DescriptionProps>
+) {
+  return (
+    <Box className={'main-description-header bg-gray-800 text-gray-50 flex items-center justify-between px-3'}>
+      <div className={'px-2'}>
+        <code>logseq</code>
+        {props.ns != '.' && (<code>.{props.ns}</code>)}
+      </div>
+
+      <div>
+        <a href={''}>
+          <LogoGithubIcon/>
+        </a>
+      </div>
+    </Box>
+  )
+}
+
 export function Description (
   props: DescriptionProps
 ) {
+  const [loaded, setLoaded] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const readyRef = useRef(false)
 
@@ -39,6 +77,7 @@ export function Description (
         if (!height) return
         iframeRef.current!.style.height = height + 'px'
         iframeRef.current!.style.visibility = 'visible'
+        setLoaded(true)
       } catch (e) {
         console.log(e)
       }
@@ -57,15 +96,12 @@ export function Description (
     <Box className={'main-description mx-8'}
          borderBottomColor={'border.default'}
     >
-      <div className={'p-4'} style={{ margin: '-10px -30px' }}>
-        <code>logseq</code>
-        {props.ns != '.' && (<code>.{props.ns}</code>)}
-      </div>
-
       <Box className={'rounded-xl'}>
+        {!loaded && <Skeleton/>}
+
         <iframe
           ref={iframeRef}
-          className={'w-full min-h-fit px-5'}
+          className={'w-full min-h-fit'}
           style={{ colorScheme: 'light' }}
           src={`${lspApisEndpoint}/${entryHtml}.html#${props.name}`}></iframe>
       </Box>

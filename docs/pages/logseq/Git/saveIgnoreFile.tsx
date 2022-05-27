@@ -1,10 +1,15 @@
 import { NextPage } from 'next'
-import { Description } from '@/components/Description'
+import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
 const saveIgnoreFile: NextPage = () => {
   return (
       <div className="main-page-content">
+        <DescriptionHeader
+          ns="Git"
+          name="saveIgnoreFile"
+         />
+
         <Description
           ns="Git"
           name="saveIgnoreFile"

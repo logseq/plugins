@@ -1,10 +1,15 @@
 import { NextPage } from 'next'
-import { Description } from '@/components/Description'
+import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
 const onBlockChanged: NextPage = () => {
   return (
       <div className="main-page-content">
+        <DescriptionHeader
+          ns="DB"
+          name="onBlockChanged"
+         />
+
         <Description
           ns="DB"
           name="onBlockChanged"
