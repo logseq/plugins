@@ -19,18 +19,12 @@ export function ItemLabel (props: { name: string, kind: string }) {
 
   return (
     <div className={'flex items-center'}>
-      {isProperty ? (<SpriteIconProperty/>) : (
+      {isProperty ? (<SpriteIconProperty />) : (
         isMethod ? (<SpriteIconMethod/>) : null
       )}
       <span className={'pl-1'}>{name}</span>
     </div>)
 }
-
-// export function goToItem (item: { name: string, kink: string }) {
-//   console.log(
-//     'goToItem: ', item
-//   )
-// }
 
 export function SearchDialogContent (
   props: {

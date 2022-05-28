@@ -45,11 +45,11 @@ export function SpriteIcon (
 }
 
 export function SpriteIconProperty () {
-  return (<SpriteIcon x={-204} y={0} className={'ml-1'}/>)
+  return (<SpriteIcon x={-204} y={0} className={'ml-1'} title="Property"/>)
 }
 
 export function SpriteIconMethod () {
-  return (<SpriteIcon x={-204} y={-68} className={'ml-1'}/>)
+  return (<SpriteIcon x={-204} y={-68} className={'ml-1'} title="Method"/>)
 }
 
 export function SpriteIconInterface (props: any) {
