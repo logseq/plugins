@@ -171,3 +171,11 @@ a {
 .lsp-search-dialog {
   border-radius: 12px !important;
 }
+
+.lsp-sprite-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../public/icons@2x.png");
+  background-size: 238px 204px;
+}

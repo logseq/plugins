@@ -5,6 +5,7 @@ import { useLocalStorage } from '../helpers/useLocalStorage'
 import { Dialog } from '@primer/react/lib-esm/Dialog/Dialog'
 import { Box, TextInput } from '@primer/react'
 import { useEffect, useRef, useState } from 'react'
+import { LogseqLogo, SpriteIcon, SpriteIconInterface, SpriteIconMethod, SpriteIconProperty } from '@/components/Icons'
 
 export function SearchDialogContent (
   props: {
@@ -96,14 +97,14 @@ export function SidebarHeader () {
   return (
     <>
       <Box className={'nav-sidebar-header bg-gray-800/90 text-gray-50 flex items-center justify-between px-3'}>
-      <span>
-        <a href="https://badge.fury.io/js/@logseq%2Flibs"
-           target={'_blank'}
-        >
-          <img src="https://badge.fury.io/js/@logseq%2Flibs.svg"
-               alt="@logseq/libs"
-               height="18"
-          /></a>
+      <span className={'flex items-center'}>
+        <LogseqLogo
+          className={'w-5 h-5 mr-10'}
+          color={'#ffffff'}/>
+
+        <span className={'opacity-90'}>
+        Plugin API Docs
+        </span>
       </span>
 
         <a onClick={() => setActiveSearch(true)}>
@@ -145,9 +146,12 @@ export function Sidebar () {
                   id={'ns-' + k}
                   onClick={() => toggleItemActive(k)}
               >
-              <span>
-                {!isRoot && 'logseq.'}{k}
-              </span>
+              <div className={'flex items-center'}>
+                <SpriteIconInterface className={'mr-1'} />
+                <span>
+                  {!isRoot && 'logseq.'}{k}
+                </span>
+              </div>
 
                 {itemActiveState[k] ?
                   <ChevronDownIcon/> :
@@ -158,13 +162,21 @@ export function Sidebar () {
               {/* Sub items */}
               {itemActiveState[k] && v.map(([name, kind]) => {
                 const href = `/${isRoot ? '' : 'logseq/'}${k}/${name}`
+                const isStartOnProperty = name?.startsWith('on')
+                const isProperty = (kind === 'Property') && !isStartOnProperty
+                const isMethod = (kind === 'Method') || isStartOnProperty
+
                 return (
                   <Link key={name} href={href} scroll={false}>
-                    <dd className={`p-1 ${global?.location?.href?.endsWith(href) ? 'active' : ''}`}
+                    <dd className={`flex items-center p-1 ${global?.location?.href?.endsWith(href) ? 'active' : ''}`}
                         id={k + '-' + name}>
-                  <span className={'pl-2'}>
-                    {name} ({kind})
-                  </span>
+                      {isProperty ? (<SpriteIconProperty/>) : (
+                        isMethod ? (<SpriteIconMethod/>) : null
+                      )}
+
+                      <span className={'pl-1'}>
+                        {name}
+                      </span>
                     </dd>
                   </Link>)
               })}

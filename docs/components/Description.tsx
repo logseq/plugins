@@ -2,6 +2,7 @@ import { Box } from '@primer/react'
 import { useEffect, useRef, useState } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
 import { LogoGithubIcon } from '@primer/octicons-react'
+import { LogseqLogo } from '@/components/Icons'
 
 type DescriptionProps = {
   ns: string,
@@ -31,12 +32,21 @@ export function DescriptionHeader (
 ) {
   return (
     <Box className={'main-description-header bg-gray-800 text-gray-50 flex items-center justify-between px-3'}>
-      <div className={'px-2'}>
+      <div className={'px-2 flex items-center'}>
         <code>logseq</code>
         {props.ns != '.' && (<code>.{props.ns}</code>)}
       </div>
 
-      <div>
+      <div className={'flex items-center space-x-6'}>
+        <a href="https://badge.fury.io/js/@logseq%2Flibs"
+           target={'_blank'}
+           className={'opacity-80'}
+        >
+          <img src="https://badge.fury.io/js/@logseq%2Flibs.svg"
+               alt="@logseq/libs"
+               height="18"
+          /></a>
+
         <a href={''}>
           <LogoGithubIcon/>
         </a>
