@@ -179,3 +179,8 @@ a {
   background-image: url("../public/icons@2x.png");
   background-size: 238px 204px;
 }
+
+.lsp-search-result-wrap {
+  max-height: 70vh;
+  overflow-y: auto;
+}

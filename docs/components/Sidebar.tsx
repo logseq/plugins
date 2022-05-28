@@ -3,16 +3,81 @@ import sidebarData from './Sidebar.json'
 import { ChevronDownIcon, ChevronLeftIcon, SearchIcon } from '@primer/octicons-react'
 import { useLocalStorage } from '../helpers/useLocalStorage'
 import { Dialog } from '@primer/react/lib-esm/Dialog/Dialog'
-import { Box, TextInput } from '@primer/react'
+import { Box, FilterList, TextInput } from '@primer/react'
 import { useEffect, useRef, useState } from 'react'
-import { LogseqLogo, SpriteIcon, SpriteIconInterface, SpriteIconMethod, SpriteIconProperty } from '@/components/Icons'
+import { LogseqLogo, SpriteIconInterface, SpriteIconMethod, SpriteIconProperty } from '@/components/Icons'
+import Fuse from 'fuse.js'
+import { useRouter } from 'next/router'
+
+let fuseInstance: any = null
+
+export function ItemLabel (props: { name: string, kind: string }) {
+  const { name, kind } = props
+  const isStartOnProperty = name?.startsWith('on')
+  const isProperty = (kind === 'Property') && !isStartOnProperty
+  const isMethod = (kind === 'Method') || isStartOnProperty
+
+  return (
+    <div className={'flex items-center'}>
+      {isProperty ? (<SpriteIconProperty/>) : (
+        isMethod ? (<SpriteIconMethod/>) : null
+      )}
+      <span className={'pl-1'}>{name}</span>
+    </div>)
+}
+
+// export function goToItem (item: { name: string, kink: string }) {
+//   console.log(
+//     'goToItem: ', item
+//   )
+// }
 
 export function SearchDialogContent (
   props: {
     closeDialog: () => void
   }
 ) {
+  const router = useRouter()
+  const inputRef = useRef<HTMLInputElement>(null)
   const elRef = useRef<HTMLDivElement>(null)
+  const [searchResult, setSearchResult] = useState({
+    items: [],
+    selected: 0
+  })
+  const goToItem = (item: { name: string, kink: string }) => {
+    const paths = item.name.split('.')
+
+    if (paths?.[0] !== 'logseq') {
+      paths.unshift('logseq')
+    }
+
+    router.push('/' + paths.join('/'))
+  }
+
+  useEffect(() => {
+    if (!fuseInstance) {
+      fuseInstance = new Fuse(
+        Object.entries(sidebarData)
+          .reduce((acc: any, it) => {
+            const [ns, vs] = it
+            vs?.forEach(v => {
+              acc.push({
+                name: `${ns}.${v[0]}`,
+                kind: v[1]
+              })
+            })
+            return acc
+          }, []),
+        {
+          includeMatches: true,
+          includeScore: true,
+          keys: ['name'],
+          minMatchCharLength: 2,
+          threshold: 0.1
+        }
+      )
+    }
+  }, [])
 
   useEffect(() => {
     const dialogEl = elRef.current?.closest('div[role=dialog]')
@@ -28,18 +93,104 @@ export function SearchDialogContent (
     })
   }, [])
 
+  const onSearchHandle = (value: string) => {
+    value = value?.trim()
+
+    const result = fuseInstance?.search(value)
+
+    setSearchResult({
+      items: result, selected: 0
+    })
+  }
+
   return (
     <div className="lsp-search-content"
          ref={elRef}
     >
-      <TextInput
-        leadingVisual={SearchIcon}
-        aria-label="Search"
-        placeholder="Search"
-        autoComplete="off"
-        size={'large'}
-        className={'block w-full p-5'}
-      />
+      {/* search input*/}
+      <div>
+        <TextInput
+          ref={inputRef}
+          leadingVisual={SearchIcon}
+          aria-label="Search"
+          placeholder="Search"
+          autoComplete="off"
+          size={'large'}
+          className={'block w-full p-5'}
+          onChange={e => onSearchHandle(e.target.value)}
+          onKeyDown={e => {
+            const which = e.which
+            const isDown = which === 40
+            const isUp = which === 38
+            const isEsc = which === 27
+            const isEnter = which === 13
+            const inResultingLength = +searchResult.items?.length
+            const stopEvent = () => {
+              e.stopPropagation()
+              e.preventDefault()
+            }
+
+            if (isEsc) {
+              if (inResultingLength) {
+                inputRef.current!.value = ''
+                setSearchResult({
+                  items: [],
+                  selected: 0
+                })
+                stopEvent()
+              }
+
+              return
+            }
+
+            if (isEnter && inResultingLength) {
+              const selectedItem: any =
+                searchResult.items[searchResult.selected]
+              goToItem(selectedItem?.item)
+              props.closeDialog()
+              return
+            }
+
+            if (isDown || isUp) {
+              if (inResultingLength) {
+                let selected = searchResult.selected + (isDown ? 1 : -1)
+
+                if (selected >= inResultingLength) {
+                  selected = 0
+                } else if (selected < 0) {
+                  selected = inResultingLength - 1
+                }
+
+                setSearchResult({ ...searchResult, selected })
+                stopEvent()
+              }
+            }
+          }}
+        />
+      </div>
+
+      {/* search result*/}
+      {(searchResult?.items?.length > 0) && (
+        <div className={'lsp-search-result-wrap'}>
+          <FilterList>
+            {searchResult.items.map((it, idx) => {
+              const { item }: any = it
+              return (
+                <FilterList.Item
+                  key={item.name}
+                  selected={searchResult.selected === idx}
+                  className={'select-none'}
+                  onClick={() => {
+                    goToItem(item)
+                    props.closeDialog()
+                  }}
+                >
+                  <ItemLabel name={item.name} kind={item.kind}/>
+                </FilterList.Item>
+              )
+            })}
+          </FilterList>
+        </div>)}
     </div>
   )
 }
@@ -107,7 +258,8 @@ export function SidebarHeader () {
         </span>
       </span>
 
-        <a onClick={() => setActiveSearch(true)}>
+        <a className={'cursor-pointer hover:opacity-80 active:opacity-50'}
+           onClick={() => setActiveSearch(true)}>
           <SearchIcon/>
         </a>
       </Box>
@@ -146,12 +298,12 @@ export function Sidebar () {
                   id={'ns-' + k}
                   onClick={() => toggleItemActive(k)}
               >
-              <div className={'flex items-center'}>
-                <SpriteIconInterface className={'mr-1'} />
-                <span>
+                <div className={'flex items-center'}>
+                  <SpriteIconInterface className={'mr-1'}/>
+                  <span>
                   {!isRoot && 'logseq.'}{k}
                 </span>
-              </div>
+                </div>
 
                 {itemActiveState[k] ?
                   <ChevronDownIcon/> :
@@ -162,21 +314,12 @@ export function Sidebar () {
               {/* Sub items */}
               {itemActiveState[k] && v.map(([name, kind]) => {
                 const href = `/${isRoot ? '' : 'logseq/'}${k}/${name}`
-                const isStartOnProperty = name?.startsWith('on')
-                const isProperty = (kind === 'Property') && !isStartOnProperty
-                const isMethod = (kind === 'Method') || isStartOnProperty
 
                 return (
                   <Link key={name} href={href} scroll={false}>
                     <dd className={`flex items-center p-1 ${global?.location?.href?.endsWith(href) ? 'active' : ''}`}
                         id={k + '-' + name}>
-                      {isProperty ? (<SpriteIconProperty/>) : (
-                        isMethod ? (<SpriteIconMethod/>) : null
-                      )}
-
-                      <span className={'pl-1'}>
-                        {name}
-                      </span>
+                      <ItemLabel name={name} kind={kind}/>
                     </dd>
                   </Link>)
               })}
