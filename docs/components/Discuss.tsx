@@ -8,14 +8,14 @@ export function Discuss (
   const status = useScript(
     'https://utteranc.es/client.js',
     {
-      'repo': 'xyhp915/plugins',
+      'repo': 'logseq/plugins',
       'issue-term': `🧩 ${props.ns === '.' ? 'logseq' : `logseq.${props.ns}`}.${props.name}`,
       'theme': `preferred-color-scheme`,
       'crossorigin': 'anonymous'
     }, '#discuss-container')
 
   useEffect(() => {
-    console.debug('===>', status)
+    console.debug('[Discuss] ', status)
   }, [status])
 
   return (
