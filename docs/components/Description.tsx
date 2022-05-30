@@ -32,10 +32,14 @@ export function DescriptionHeader (
 ) {
   return (
     <Box className={'main-description-header bg-gray-800 text-gray-50 flex items-center justify-between px-3'}>
-      <div className={'px-2 flex items-center'}>
-        <code>logseq</code>
-        {props.ns != '.' && (<code>.{props.ns}</code>)}
-      </div>
+      {props.ns ?
+        (
+          <div className={'px-2 flex items-center'}>
+            <code>logseq</code>
+            {props.ns != '.' && (<code>.{props.ns}</code>)}
+          </div>
+        ) : (<span/>)}
+
 
       <div className={'flex items-center space-x-6'}>
         <a href="https://badge.fury.io/js/@logseq%2Flibs"

@@ -36,7 +36,8 @@ function shouldIgnoreItem (name) {
     (name.startsWith('_') ||
       ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
         'FileStorage', 'Experiments',
-        'emit', 'on', 'off', 'once', 'listeners'
+        'emit', 'on', 'off', 'once', 'listeners', 'listenerCount',
+        'eventNames', 'addListener', 'removeListener', 'removeAllListeners'
       ].some(it => {
         return name.toLowerCase() === it.toLowerCase()
       }))

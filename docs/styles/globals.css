@@ -132,6 +132,8 @@ a {
 
 .main-container > .r {
   flex: 1;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .main-page-content {
@@ -183,4 +185,8 @@ a {
 .lsp-search-result-wrap {
   max-height: 70vh;
   overflow-y: auto;
+}
+
+.markdown-body img {
+  width: 70%;
 }

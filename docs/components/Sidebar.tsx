@@ -19,7 +19,7 @@ export function ItemLabel (props: { name: string, kind: string }) {
 
   return (
     <div className={'flex items-center'}>
-      {isProperty ? (<SpriteIconProperty />) : (
+      {isProperty ? (<SpriteIconProperty/>) : (
         isMethod ? (<SpriteIconMethod/>) : null
       )}
       <span className={'pl-1'}>{name}</span>
@@ -243,10 +243,11 @@ export function SidebarHeader () {
     <>
       <Box className={'nav-sidebar-header bg-gray-800/90 text-gray-50 flex items-center justify-between px-3'}>
       <span className={'flex items-center'}>
-        <LogseqLogo
-          className={'w-5 h-5 mr-10'}
-          color={'#ffffff'}/>
-
+        <Link href={'/'}>
+          <LogseqLogo
+            className={'w-5 h-5 mr-10 cursor-pointer hover:opacity-80'}
+            color={'#ffffff'}/>
+        </Link>
         <span className={'opacity-90'}>
         Plugin API Docs
         </span>

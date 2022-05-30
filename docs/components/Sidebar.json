@@ -21,15 +21,7 @@
       "Property"
     ],
     [
-      "addListener",
-      "Method"
-    ],
-    [
       "beforeunload",
-      "Method"
-    ],
-    [
-      "eventNames",
       "Method"
     ],
     [
@@ -38,10 +30,6 @@
     ],
     [
       "hideSettingsUI",
-      "Method"
-    ],
-    [
-      "listenerCount",
       "Method"
     ],
     [
@@ -66,14 +54,6 @@
     ],
     [
       "ready",
-      "Method"
-    ],
-    [
-      "removeAllListeners",
-      "Method"
-    ],
-    [
-      "removeListener",
       "Method"
     ],
     [

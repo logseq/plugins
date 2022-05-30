@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/github.css'
 import type { AppProps } from 'next/app'
 import { Box, ThemeProvider, theme } from '@primer/react'
 import { Sidebar } from '@/components/Sidebar'

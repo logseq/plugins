@@ -1,28 +1,37 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { marked } from 'marked'
+import { DescriptionHeader } from '@/components/Description'
+
+const mdContent = marked.parse(`
+## Logseq Plugin API docs
+
+This is a community-driven documentation for Logseq plugin APIs.
+
+Samples 👉  https://github.com/logseq/logseq-plugin-samples  
+APIs 👉 https://logseq.github.io/plugins/
+
+### How to contribute?
+
+- The comments doc of plugin APIs is powered by [Typedoc](https://typedoc.org/guides/doccomments/). You can improve the corresponding 
+documentation by following the links below.
+
+![alt](/contribute_1.png)
+
+- Another way is to provide some demo code or best practice instructions by the function of comments.
+
+![alt](/contribute_2.png)
+`)
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
+    <div>
+      <DescriptionHeader />
 
-      <main className={styles.main}>
-
-        <h1 className={'text-purple-500 flex items-center tracking-wider'}>
-          - Hello Logseq -
-        </h1>
-
-      </main>
-
-      <footer className={styles.footer}>
-        <h3 className={'flex items-center'}>
-          Footer
-        </h3>
-      </footer>
+      <div className={'py-8 px-10 markdown-body'}
+           dangerouslySetInnerHTML={{ __html: mdContent }}
+      ></div>
     </div>
+
   )
 }
 
