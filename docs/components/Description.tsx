@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
 import { LogoGithubIcon } from '@primer/octicons-react'
 import { LogseqLogo } from '@/components/Icons'
+import Link from 'next/link'
 
 type DescriptionProps = {
   ns: string,
@@ -42,14 +43,14 @@ export function DescriptionHeader (
 
 
       <div className={'flex items-center space-x-6'}>
-        <a href="https://badge.fury.io/js/@logseq%2Flibs"
+        <Link href="https://badge.fury.io/js/@logseq%2Flibs"
            target={'_blank'}
            className={'opacity-80'}
         >
           <img src="https://badge.fury.io/js/@logseq%2Flibs.svg"
                alt="@logseq/libs"
                height="18"
-          /></a>
+          /></Link>
 
         <a href={''}>
           <LogoGithubIcon/>

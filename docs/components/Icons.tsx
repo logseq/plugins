@@ -10,7 +10,7 @@ export function LogseqLogo (props: {
     >
       <g id="Page-1"
          stroke="none"
-         stroke-width="1"
+         strokeWidth="1"
          fill={props.color}
       >
         <g transform="translate(-158.000000, -224.000000)"
