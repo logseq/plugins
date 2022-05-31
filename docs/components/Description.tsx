@@ -1,9 +1,7 @@
 import { Box } from '@primer/react'
 import { useEffect, useRef, useState } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
-import { LogoGithubIcon } from '@primer/octicons-react'
-import { LogseqLogo } from '@/components/Icons'
-import Link from 'next/link'
+import { MarkGithubIcon } from '@primer/octicons-react'
 
 type DescriptionProps = {
   ns: string,
@@ -41,19 +39,19 @@ export function DescriptionHeader (
           </div>
         ) : (<span/>)}
 
-
       <div className={'flex items-center space-x-6'}>
-        <Link href="https://badge.fury.io/js/@logseq%2Flibs"
+        <a href="https://badge.fury.io/js/@logseq%2Flibs"
            target={'_blank'}
-           className={'opacity-80'}
         >
           <img src="https://badge.fury.io/js/@logseq%2Flibs.svg"
                alt="@logseq/libs"
                height="18"
-          /></Link>
+          /></a>
 
-        <a href={''}>
-          <LogoGithubIcon/>
+        <a href={'https://github.com/logseq/plugins'}
+           target={'_blank'}
+        >
+          <MarkGithubIcon />
         </a>
       </div>
     </Box>

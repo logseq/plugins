@@ -1,7 +1,9 @@
-export function LogseqLogo (props: {
+import React from 'react'
+
+export const LogseqLogo = React.forwardRef((props: {
   color: string,
   [key: string]: string
-}) {
+}, _ref) => {
   return (
     <svg viewBox="0 0 195 183"
          version="1.1"
@@ -28,7 +30,7 @@ export function LogseqLogo (props: {
       </g>
     </svg>
   )
-}
+})
 
 type ISpriteIconProps = { x: number, y: number, className: string } & Record<any, any>
 
