@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const LogseqLogo = React.forwardRef((props: {
+export const LogseqLogo = React.forwardRef(function LogseqLogoInner (props: {
   color: string,
   [key: string]: string
-}, _ref) => {
+}, _ref) {
   return (
     <svg viewBox="0 0 195 183"
          version="1.1"

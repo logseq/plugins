@@ -42,6 +42,7 @@ export function DescriptionHeader (
       <div className={'flex items-center space-x-6'}>
         <a href="https://badge.fury.io/js/@logseq%2Flibs"
            target={'_blank'}
+           rel="noopener noreferrer"
         >
           <img src="https://badge.fury.io/js/@logseq%2Flibs.svg"
                alt="@logseq/libs"
@@ -50,6 +51,7 @@ export function DescriptionHeader (
 
         <a href={'https://github.com/logseq/plugins'}
            target={'_blank'}
+           rel="noopener noreferrer"
         >
           <MarkGithubIcon />
         </a>
