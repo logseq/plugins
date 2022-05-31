@@ -1,3 +1,4 @@
 ## APIs of Logseq plugins
 
-[https://logseq.github.io/plugins/](https://logseq.github.io/plugins/)
+Docs: [https://plugins-doc.logseq.com/](https://plugins-doc.logseq.com/)
+APIs: [https://logseq.github.io/plugins/](https://logseq.github.io/plugins/)
