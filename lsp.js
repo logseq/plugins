@@ -18,6 +18,7 @@ function hideElements () {
   [
     '.col-content > .tsd-panel',
     '.container-main .col-menu.menu-highlight',
+    '.container-main > .col-content > .tsd-sources',
     '.tsd-page-title',
     '.tsd-page-toolbar',
     '.tsd-index-group',
@@ -30,15 +31,12 @@ function hideElements () {
     })
   })
 
-  const commentEl = document.querySelector('.tsd-comment')
-  commentEl.style.display = 'none'
-
   const panelThs = document.querySelectorAll('.tsd-panel-group > h2')
   panelThs.forEach(it => {
     it.style.display = 'none'
   })
 
-  const footerEl = document.querySelector('footer')
+  const footerEl = [...document.querySelectorAll('body > .container')].pop()
   footerEl.style.display = 'none'
 
   const genEl = document.querySelector('.tsd-generator')
@@ -125,13 +123,17 @@ function adjustElements () {
     window.onmessage = (e) => {
       if (e?.data === 'ready') {
 
-        const targetSize = hideElements()
-        adjustElements()
+        try {
+          const targetSize = hideElements()
+          adjustElements()
 
-        top.postMessage(JSON.stringify({
-          type: 'size',
-          payload: targetSize
-        }), '*')
+          top.postMessage(JSON.stringify({
+            type: 'size',
+            payload: targetSize
+          }), '*')
+        } catch (e) {
+          console.error('LSP:', e)
+        }
 
         setTimeout(() => {
           showVisibility(document.documentElement)
