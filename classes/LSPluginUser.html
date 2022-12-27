@@ -32,7 +32,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/ILSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Interface">ILSPluginUser</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L366">src/LSPlugin.user.ts:366</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L457">src/LSPlugin.user.ts:457</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -71,7 +71,9 @@
 <a href="LSPluginUser.html#baseInfo" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>base<wbr/>Info</span></a>
 <a href="LSPluginUser.html#caller" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>caller</span></a>
 <a href="LSPluginUser.html#connected" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>connected</span></a>
+<a href="LSPluginUser.html#effect" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>effect</span></a>
 <a href="LSPluginUser.html#isMainUIVisible" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>is<wbr/>MainUIVisible</span></a>
+<a href="LSPluginUser.html#logger" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>logger</span></a>
 <a href="LSPluginUser.html#settings" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>settings</span></a>
 <a href="LSPluginUser.html#version" class="tsd-index-link tsd-kind-accessor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg><span>version</span></a>
 </div></section>
@@ -127,14 +129,14 @@
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Overrides EventEmitter&lt;LSPluginUserEvents&gt;.constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L395">src/LSPlugin.user.ts:395</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L486">src/LSPlugin.user.ts:486</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_baseInfo" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_base<wbr/>Info</span><a href="#_baseInfo" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_base<wbr/>Info<span class="tsd-signature-symbol">:</span> <a href="../interfaces/LSPluginBaseInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">LSPluginBaseInfo</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L396">src/LSPlugin.user.ts:396</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L487">src/LSPlugin.user.ts:487</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_beforeunloadCallback" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>_beforeunload<wbr/>Callback</span><a href="#_beforeunloadCallback" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_beforeunload<wbr/>Callback<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
@@ -154,54 +156,54 @@
 <h5>e: <span class="tsd-signature-type">any</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L389">src/LSPlugin.user.ts:389</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L480">src/LSPlugin.user.ts:480</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_caller" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_caller</span><a href="#_caller" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_caller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LSPluginCaller</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L397">src/LSPlugin.user.ts:397</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L488">src/LSPlugin.user.ts:488</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_connected" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_connected</span><a href="#_connected" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L373">src/LSPlugin.user.ts:373</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L464">src/LSPlugin.user.ts:464</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_debugTag" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_debug<wbr/>Tag</span><a href="#_debugTag" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_debug<wbr/>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#39;&#39;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L371">src/LSPlugin.user.ts:371</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L462">src/LSPlugin.user.ts:462</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_mExperiments" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_m<wbr/>Experiments</span><a href="#_mExperiments" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_m<wbr/>Experiments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LSPluginExperiments</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L383">src/LSPlugin.user.ts:383</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L474">src/LSPlugin.user.ts:474</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_mFileStorage" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_m<wbr/>File<wbr/>Storage</span><a href="#_mFileStorage" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_m<wbr/>File<wbr/>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LSPluginFileStorage</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L381">src/LSPlugin.user.ts:381</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L472">src/LSPlugin.user.ts:472</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_mRequest" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_m<wbr/>Request</span><a href="#_mRequest" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_m<wbr/>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LSPluginRequest</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L382">src/LSPlugin.user.ts:382</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L473">src/LSPlugin.user.ts:473</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_settingsSchema" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>_settings<wbr/>Schema</span><a href="#_settingsSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_settings<wbr/>Schema<span class="tsd-signature-symbol">?:</span> <a href="../types/SettingSchemaDesc.html" class="tsd-signature-type" data-tsd-kind="Type alias">SettingSchemaDesc</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L372">src/LSPlugin.user.ts:372</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L463">src/LSPlugin.user.ts:463</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_ui" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_ui</span><a href="#_ui" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_ui<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">uiState</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 <div class="tsd-comment tsd-typography"><p>ui frame identities</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L379">src/LSPlugin.user.ts:379</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L470">src/LSPlugin.user.ts:470</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="_version" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>_version</span><a href="#_version" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">_version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = LIB_VERSION</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L370">src/LSPlugin.user.ts:370</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L461">src/LSPlugin.user.ts:461</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="prefixed" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>prefixed</span><a href="#prefixed" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">prefixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
@@ -220,7 +222,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IAppProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IAppProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#App">App</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L693">src/LSPlugin.user.ts:693</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L798">src/LSPlugin.user.ts:798</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="Assets" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Assets</span><a href="#Assets" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -229,7 +231,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IAssetsProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IAssetsProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#Assets">Assets</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L713">src/LSPlugin.user.ts:713</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L818">src/LSPlugin.user.ts:818</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="DB" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>DB</span><a href="#DB" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -238,7 +240,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IDBProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IDBProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#DB">DB</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L701">src/LSPlugin.user.ts:701</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L806">src/LSPlugin.user.ts:806</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="Editor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Editor</span><a href="#Editor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -247,7 +249,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IEditorProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IEditorProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#Editor">Editor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L697">src/LSPlugin.user.ts:697</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L802">src/LSPlugin.user.ts:802</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="Experiments" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Experiments</span><a href="#Experiments" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -256,7 +258,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LSPluginExperiments</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#Experiments">Experiments</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L729">src/LSPlugin.user.ts:729</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L834">src/LSPlugin.user.ts:834</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="FileStorage" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>File<wbr/>Storage</span><a href="#FileStorage" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -265,7 +267,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LSPluginFileStorage</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#FileStorage">FileStorage</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L717">src/LSPlugin.user.ts:717</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L822">src/LSPlugin.user.ts:822</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="Git" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Git</span><a href="#Git" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -274,7 +276,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IGitProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IGitProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#Git">Git</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L705">src/LSPlugin.user.ts:705</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L810">src/LSPlugin.user.ts:810</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="Request" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Request</span><a href="#Request" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -283,7 +285,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LSPluginRequest</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#Request">Request</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L723">src/LSPlugin.user.ts:723</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L828">src/LSPlugin.user.ts:828</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="UI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>UI</span><a href="#UI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -292,7 +294,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/IUIProxy.html" class="tsd-signature-type" data-tsd-kind="Interface">IUIProxy</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#UI">UI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L709">src/LSPlugin.user.ts:709</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L814">src/LSPlugin.user.ts:814</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="baseInfo" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>base<wbr/>Info</span><a href="#baseInfo" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -303,7 +305,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/LSPluginBaseInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">LSPluginBaseInfo</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#baseInfo">baseInfo</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L586">src/LSPlugin.user.ts:586</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L683">src/LSPlugin.user.ts:683</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="caller" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>caller</span><a href="#caller" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -314,7 +316,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LSPluginCaller</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#caller">caller</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L594">src/LSPlugin.user.ts:594</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L699">src/LSPlugin.user.ts:699</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="connected" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>connected</span><a href="#connected" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -325,7 +327,15 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#connected">connected</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L582">src/LSPlugin.user.ts:582</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L679">src/LSPlugin.user.ts:679</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="effect" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>effect</span><a href="#effect" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+<li class="tsd-signature" id="effect.effect-1"><span class="tsd-signature-symbol">get</span> effect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Boolean</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Boolean</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L687">src/LSPlugin.user.ts:687</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="isMainUIVisible" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>is<wbr/>MainUIVisible</span><a href="#isMainUIVisible" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -334,7 +344,15 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#isMainUIVisible">isMainUIVisible</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L577">src/LSPlugin.user.ts:577</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L674">src/LSPlugin.user.ts:674</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="logger" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>logger</span><a href="#logger" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+<li class="tsd-signature" id="logger.logger-1"><span class="tsd-signature-symbol">get</span> logger<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PluginLogger</span></li>
+<li class="tsd-description">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PluginLogger</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L691">src/LSPlugin.user.ts:691</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="settings" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>settings</span><a href="#settings" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -350,7 +368,7 @@
 <h5>disabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5></li></ul><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#settings">settings</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L590">src/LSPlugin.user.ts:590</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L695">src/LSPlugin.user.ts:695</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="version" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>version</span><a href="#version" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -358,7 +376,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L573">src/LSPlugin.user.ts:573</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L670">src/LSPlugin.user.ts:670</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="_callWin" class="tsd-anchor"></a>
@@ -373,7 +391,7 @@
 <h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L686">src/LSPlugin.user.ts:686</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L791">src/LSPlugin.user.ts:791</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="_execCallableAPI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>_exec<wbr/>CallableAPI</span><a href="#_execCallableAPI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -388,7 +406,7 @@
 <h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L679">src/LSPlugin.user.ts:679</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L784">src/LSPlugin.user.ts:784</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="_execCallableAPIAsync" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>_exec<wbr/>CallableAPIAsync</span><a href="#_execCallableAPIAsync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -403,7 +421,7 @@
 <h5><code class="tsd-tag ts-flagRest">Rest</code> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L672">src/LSPlugin.user.ts:672</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L777">src/LSPlugin.user.ts:777</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="_makeUserProxy" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>_make<wbr/>User<wbr/>Proxy</span><a href="#_makeUserProxy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -418,7 +436,7 @@
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> tag: <a href="../types/UserProxyTags.html" class="tsd-signature-type" data-tsd-kind="Type alias">UserProxyTags</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L608">src/LSPlugin.user.ts:608</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L713">src/LSPlugin.user.ts:713</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="addListener" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>add<wbr/>Listener</span><a href="#addListener" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -478,7 +496,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of ILSPluginUser.beforeunload</p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L477">src/LSPlugin.user.ts:477</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L571">src/LSPlugin.user.ts:571</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="emit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>emit</span><a href="#emit" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -510,7 +528,7 @@
 <li class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L471">src/LSPlugin.user.ts:471</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L565">src/LSPlugin.user.ts:565</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="eventNames" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>event<wbr/>Names</span><a href="#eventNames" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -542,7 +560,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#hideMainUI">hideMainUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L541">src/LSPlugin.user.ts:541</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L637">src/LSPlugin.user.ts:637</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="hideSettingsUI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>hide<wbr/>SettingsUI</span><a href="#hideSettingsUI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -551,7 +569,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#hideSettingsUI">hideSettingsUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L529">src/LSPlugin.user.ts:529</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L624">src/LSPlugin.user.ts:624</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="listenerCount" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>listener<wbr/>Count</span><a href="#listenerCount" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -696,7 +714,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <a href="../types/IUserOffHook.html" class="tsd-signature-type" data-tsd-kind="Type alias">IUserOffHook</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#onSettingsChanged">onSettingsChanged</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L519">src/LSPlugin.user.ts:519</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L614">src/LSPlugin.user.ts:614</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="once" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>once</span><a href="#once" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -752,7 +770,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#provideModel">provideModel</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L482">src/LSPlugin.user.ts:482</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L576">src/LSPlugin.user.ts:576</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="provideStyle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>provide<wbr/>Style</span><a href="#provideStyle" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -774,7 +792,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#provideStyle">provideStyle</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L492">src/LSPlugin.user.ts:492</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L586">src/LSPlugin.user.ts:586</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="provideTheme" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>provide<wbr/>Theme</span><a href="#provideTheme" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -790,7 +808,7 @@ listeners.</p>
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#provideTheme">provideTheme</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L487">src/LSPlugin.user.ts:487</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L581">src/LSPlugin.user.ts:581</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="provideUI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>provideUI</span><a href="#provideUI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -813,7 +831,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#provideUI">provideUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L497">src/LSPlugin.user.ts:497</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L591">src/LSPlugin.user.ts:591</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="ready" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ready</span><a href="#ready" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -833,7 +851,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#ready">ready</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L427">src/LSPlugin.user.ts:427</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L519">src/LSPlugin.user.ts:519</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="removeAllListeners" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>All<wbr/>Listeners</span><a href="#removeAllListeners" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
@@ -903,7 +921,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#resolveResourceFullUrl">resolveResourceFullUrl</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L598">src/LSPlugin.user.ts:598</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L703">src/LSPlugin.user.ts:703</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="setMainUIAttrs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>MainUIAttrs</span><a href="#setMainUIAttrs" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -917,7 +935,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#setMainUIAttrs">setMainUIAttrs</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L533">src/LSPlugin.user.ts:533</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L629">src/LSPlugin.user.ts:629</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="setMainUIInlineStyle" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>MainUIInline<wbr/>Style</span><a href="#setMainUIInlineStyle" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -939,7 +957,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#setMainUIInlineStyle">setMainUIInlineStyle</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L537">src/LSPlugin.user.ts:537</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L633">src/LSPlugin.user.ts:633</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="showMainUI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>show<wbr/>MainUI</span><a href="#showMainUI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -958,7 +976,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#showMainUI">showMainUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L552">src/LSPlugin.user.ts:552</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L648">src/LSPlugin.user.ts:648</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="showSettingsUI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>show<wbr/>SettingsUI</span><a href="#showSettingsUI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -967,7 +985,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#showSettingsUI">showSettingsUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L525">src/LSPlugin.user.ts:525</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L620">src/LSPlugin.user.ts:620</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="toggleMainUI" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>toggle<wbr/>MainUI</span><a href="#toggleMainUI" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -978,7 +996,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#toggleMainUI">toggleMainUI</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L563">src/LSPlugin.user.ts:563</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L659">src/LSPlugin.user.ts:659</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="updateSettings" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>update<wbr/>Settings</span><a href="#updateSettings" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -996,7 +1014,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#updateSettings">updateSettings</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L514">src/LSPlugin.user.ts:514</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L609">src/LSPlugin.user.ts:609</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="useSettingsSchema" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>use<wbr/>Settings<wbr/>Schema</span><a href="#useSettingsSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1014,7 +1032,7 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <h4 class="tsd-returns-title">Returns <a href="LSPluginUser.html" class="tsd-signature-type" data-tsd-kind="Class">LSPluginUser</a></h4><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/ILSPluginUser.html">ILSPluginUser</a>.<a href="../interfaces/ILSPluginUser.html#useSettingsSchema">useSettingsSchema</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/logseq/logseq/blob/823bb9b94/libs/src/LSPlugin.user.ts#L502">src/LSPlugin.user.ts:502</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/logseq/logseq/blob/ac1b53544/libs/src/LSPlugin.user.ts#L597">src/LSPlugin.user.ts:597</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -1065,7 +1083,9 @@ Event handlers can not be passed by string, so you need to create them in <code>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#baseInfo" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>base<wbr/>Info</a></li>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#caller" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>caller</a></li>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#connected" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>connected</a></li>
+<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#effect" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>effect</a></li>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#isMainUIVisible" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>is<wbr/>MainUIVisible</a></li>
+<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#logger" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>logger</a></li>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#settings" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>settings</a></li>
 <li class="tsd-kind-accessor tsd-parent-kind-class"><a href="LSPluginUser.html#version" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-262144-path"></use><use href="#icon-262144-text"></use></svg>version</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="LSPluginUser.html#_callWin" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>_call<wbr/>Win</a></li>
