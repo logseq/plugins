@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { marked } from 'marked'
 import { DescriptionHeader } from '@/components/Description'
 
@@ -26,6 +27,17 @@ const Home: NextPage = () => {
   return (
     <div>
       <DescriptionHeader />
+      <Head>
+        <title>Logseq Plugin API Docs</title>
+        <meta name="title" content="Logseq Plugin API Docs"/>
+        <meta name="description" content="Documentation for the Logseq Plugin API"/>
+        <link rel="icon" href="/logo.png" />
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://plugins-doc.logseq.com/"/>
+        <meta property="og:title" content="Logseq Plugin API Docs"/>
+        <meta property="og:description" content="Documentation for the Logseq Plugin API"/>
+      </Head>
 
       <div className={'py-8 px-10 markdown-body'}
            dangerouslySetInnerHTML={{ __html: mdContent }}
