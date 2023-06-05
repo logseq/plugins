@@ -2,6 +2,7 @@ import { Box } from '@primer/react'
 import { useEffect, useRef, useState } from 'react'
 import { lspApisEndpoint } from '../helpers/env'
 import { MarkGithubIcon } from '@primer/octicons-react'
+import { useColorScheme } from '../helpers/useColorScheme'
 
 type DescriptionProps = {
   ns: string,
@@ -66,6 +67,7 @@ export function Description (
   const [loaded, setLoaded] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const readyRef = useRef(false)
+  const colorScheme = useColorScheme();
 
   useEffect(() => {
     setTimeout(() => {
@@ -92,6 +94,7 @@ export function Description (
         if (!height) return
         iframeRef.current!.style.height = height + 'px'
         iframeRef.current!.style.visibility = 'visible'
+        iframeRef.current!.style.colorScheme = colorScheme.scheme
         setLoaded(true)
       } catch (e) {
         console.log(e)
@@ -117,7 +120,6 @@ export function Description (
         <iframe
           ref={iframeRef}
           className={'w-full min-h-fit'}
-          style={{ colorScheme: 'light' }}
           src={`${lspApisEndpoint}/${entryHtml}.html#${props.name}`}></iframe>
       </Box>
     </Box>
