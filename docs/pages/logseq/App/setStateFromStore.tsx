@@ -2,26 +2,26 @@ import { NextPage } from 'next'
 import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const q: NextPage = () => {
+const setStateFromStore: NextPage = () => {
   return (
       <div className="main-page-content">
         <DescriptionHeader
-          ns="DB"
-          name="q"
+          ns="App"
+          name="setStateFromStore"
          />
 
         <Description
-          ns="DB"
-          name="q"
+          ns="App"
+          name="setStateFromStore"
           comment=""
         />
 
        <Discuss
-          ns="DB"
-          name="q"
+          ns="App"
+          name="setStateFromStore"
        />
       </div>
   )
 }
 
-export default q
+export default setStateFromStore

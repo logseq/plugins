@@ -13,8 +13,7 @@ const registerSlashCommand: NextPage = () => {
         <Description
           ns="Editor"
           name="registerSlashCommand"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

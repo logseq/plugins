@@ -13,7 +13,7 @@ const connected: NextPage = () => {
         <Description
           ns="."
           name="connected"
-          comment="Connection status with the main app"
+          comment=""
         />
 
        <Discuss

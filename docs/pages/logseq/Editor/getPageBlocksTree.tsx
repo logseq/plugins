@@ -13,8 +13,7 @@ const getPageBlocksTree: NextPage = () => {
         <Description
           ns="Editor"
           name="getPageBlocksTree"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

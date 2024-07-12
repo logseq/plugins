@@ -13,8 +13,7 @@ const provideTheme: NextPage = () => {
         <Description
           ns="."
           name="provideTheme"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

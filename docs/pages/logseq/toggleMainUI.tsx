@@ -13,8 +13,7 @@ const toggleMainUI: NextPage = () => {
         <Description
           ns="."
           name="toggleMainUI"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

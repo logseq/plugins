@@ -13,8 +13,7 @@ const setMainUIInlineStyle: NextPage = () => {
         <Description
           ns="."
           name="setMainUIInlineStyle"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

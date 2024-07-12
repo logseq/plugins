@@ -13,7 +13,7 @@ const caller: NextPage = () => {
         <Description
           ns="."
           name="caller"
-          comment="Duplex message caller"
+          comment=""
         />
 
        <Discuss

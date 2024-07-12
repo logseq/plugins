@@ -13,8 +13,7 @@ const provideModel: NextPage = () => {
         <Description
           ns="."
           name="provideModel"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

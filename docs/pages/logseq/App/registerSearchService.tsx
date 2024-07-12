@@ -2,26 +2,26 @@ import { NextPage } from 'next'
 import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const q: NextPage = () => {
+const registerSearchService: NextPage = () => {
   return (
       <div className="main-page-content">
         <DescriptionHeader
-          ns="DB"
-          name="q"
+          ns="App"
+          name="registerSearchService"
          />
 
         <Description
-          ns="DB"
-          name="q"
+          ns="App"
+          name="registerSearchService"
           comment=""
         />
 
        <Discuss
-          ns="DB"
-          name="q"
+          ns="App"
+          name="registerSearchService"
        />
       </div>
   )
 }
 
-export default q
+export default registerSearchService

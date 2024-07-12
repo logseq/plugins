@@ -13,8 +13,7 @@ const provideStyle: NextPage = () => {
         <Description
           ns="."
           name="provideStyle"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

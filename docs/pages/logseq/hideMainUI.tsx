@@ -13,8 +13,7 @@ const hideMainUI: NextPage = () => {
         <Description
           ns="."
           name="hideMainUI"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

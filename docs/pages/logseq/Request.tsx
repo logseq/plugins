@@ -2,26 +2,26 @@ import { NextPage } from 'next'
 import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const q: NextPage = () => {
+const Request: NextPage = () => {
   return (
       <div className="main-page-content">
         <DescriptionHeader
-          ns="DB"
-          name="q"
+          ns="."
+          name="Request"
          />
 
         <Description
-          ns="DB"
-          name="q"
+          ns="."
+          name="Request"
           comment=""
         />
 
        <Discuss
-          ns="DB"
-          name="q"
+          ns="."
+          name="Request"
        />
       </div>
   )
 }
 
-export default q
+export default Request

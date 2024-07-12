@@ -2,26 +2,26 @@ import { NextPage } from 'next'
 import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const q: NextPage = () => {
+const onGraphAfterIndexed: NextPage = () => {
   return (
       <div className="main-page-content">
         <DescriptionHeader
-          ns="DB"
-          name="q"
+          ns="App"
+          name="onGraphAfterIndexed"
          />
 
         <Description
-          ns="DB"
-          name="q"
+          ns="App"
+          name="onGraphAfterIndexed"
           comment=""
         />
 
        <Discuss
-          ns="DB"
-          name="q"
+          ns="App"
+          name="onGraphAfterIndexed"
        />
       </div>
   )
 }
 
-export default q
+export default onGraphAfterIndexed

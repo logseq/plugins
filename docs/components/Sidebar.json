@@ -5,6 +5,10 @@
       "Property"
     ],
     [
+      "beforeunload",
+      "Property"
+    ],
+    [
       "caller",
       "Property"
     ],
@@ -19,10 +23,6 @@
     [
       "settings",
       "Property"
-    ],
-    [
-      "beforeunload",
-      "Method"
     ],
     [
       "hideMainUI",
@@ -91,11 +91,67 @@
   ],
   "App": [
     [
+      "clearRightSidebarBlocks",
+      "Property"
+    ],
+    [
+      "execGitCommand",
+      "Property"
+    ],
+    [
+      "getCurrentGraph",
+      "Property"
+    ],
+    [
+      "getCurrentGraphConfigs",
+      "Property"
+    ],
+    [
+      "getCurrentGraphFavorites",
+      "Property"
+    ],
+    [
+      "getCurrentGraphRecent",
+      "Property"
+    ],
+    [
+      "getExternalPlugin",
+      "Property"
+    ],
+    [
+      "getInfo",
+      "Property"
+    ],
+    [
+      "getStateFromStore",
+      "Property"
+    ],
+    [
+      "getUserConfigs",
+      "Property"
+    ],
+    [
+      "getUserInfo",
+      "Property"
+    ],
+    [
+      "invokeExternalCommand",
+      "Property"
+    ],
+    [
+      "invokeExternalPlugin",
+      "Property"
+    ],
+    [
       "onBlockRendererSlotted",
       "Property"
     ],
     [
       "onCurrentGraphChanged",
+      "Property"
+    ],
+    [
+      "onGraphAfterIndexed",
       "Property"
     ],
     [
@@ -115,313 +171,317 @@
       "Property"
     ],
     [
+      "onThemeChanged",
+      "Property"
+    ],
+    [
       "onThemeModeChanged",
       "Property"
     ],
     [
-      "execGitCommand",
-      "Method"
-    ],
-    [
-      "getCurrentGraph",
-      "Method"
-    ],
-    [
-      "getInfo",
-      "Method"
-    ],
-    [
-      "getStateFromStore",
-      "Method"
-    ],
-    [
-      "getUserConfigs",
-      "Method"
-    ],
-    [
-      "getUserInfo",
-      "Method"
-    ],
-    [
-      "invokeExternalCommand",
-      "Method"
-    ],
-    [
       "openExternalLink",
-      "Method"
+      "Property"
     ],
     [
       "pushState",
-      "Method"
+      "Property"
     ],
     [
       "queryElementById",
-      "Method"
+      "Property"
     ],
     [
       "queryElementRect",
-      "Method"
+      "Property"
     ],
     [
       "quit",
-      "Method"
+      "Property"
     ],
     [
       "registerCommand",
-      "Method"
+      "Property"
     ],
     [
       "registerCommandPalette",
-      "Method"
+      "Property"
     ],
     [
       "registerCommandShortcut",
-      "Method"
+      "Property"
     ],
     [
       "registerPageMenuItem",
-      "Method"
+      "Property"
     ],
     [
       "registerUIItem",
-      "Method"
+      "Property"
     ],
     [
       "relaunch",
-      "Method"
+      "Property"
     ],
     [
       "replaceState",
-      "Method"
+      "Property"
     ],
     [
       "setFullScreen",
-      "Method"
+      "Property"
     ],
     [
       "setLeftSidebarVisible",
-      "Method"
+      "Property"
     ],
     [
       "setRightSidebarVisible",
-      "Method"
+      "Property"
+    ],
+    [
+      "setStateFromStore",
+      "Property"
     ],
     [
       "setZoomFactor",
-      "Method"
+      "Property"
     ],
     [
       "showMsg",
+      "Property"
+    ],
+    [
+      "registerSearchService",
       "Method"
     ]
   ],
   "Editor": [
     [
+      "appendBlockInPage",
+      "Property"
+    ],
+    [
+      "checkEditing",
+      "Property"
+    ],
+    [
+      "createPage",
+      "Property"
+    ],
+    [
+      "deletePage",
+      "Property"
+    ],
+    [
+      "editBlock",
+      "Property"
+    ],
+    [
+      "exitEditingMode",
+      "Property"
+    ],
+    [
+      "getAllPages",
+      "Property"
+    ],
+    [
+      "getBlock",
+      "Property"
+    ],
+    [
+      "getBlockProperties",
+      "Property"
+    ],
+    [
+      "getBlockProperty",
+      "Property"
+    ],
+    [
+      "getCurrentBlock",
+      "Property"
+    ],
+    [
+      "getCurrentPage",
+      "Property"
+    ],
+    [
+      "getCurrentPageBlocksTree",
+      "Property"
+    ],
+    [
+      "getEditingBlockContent",
+      "Property"
+    ],
+    [
+      "getEditingCursorPosition",
+      "Property"
+    ],
+    [
+      "getNextSiblingBlock",
+      "Property"
+    ],
+    [
+      "getPage",
+      "Property"
+    ],
+    [
+      "getPageBlocksTree",
+      "Property"
+    ],
+    [
+      "getPageLinkedReferences",
+      "Property"
+    ],
+    [
+      "getPagesFromNamespace",
+      "Property"
+    ],
+    [
+      "getPagesTreeFromNamespace",
+      "Property"
+    ],
+    [
+      "getPreviousSiblingBlock",
+      "Property"
+    ],
+    [
+      "getSelectedBlocks",
+      "Property"
+    ],
+    [
+      "insertAtEditingCursor",
+      "Property"
+    ],
+    [
+      "insertBatchBlock",
+      "Property"
+    ],
+    [
+      "insertBlock",
+      "Property"
+    ],
+    [
+      "moveBlock",
+      "Property"
+    ],
+    [
+      "newBlockUUID",
+      "Property"
+    ],
+    [
       "onInputSelectionEnd",
       "Property"
     ],
     [
-      "appendBlockInPage",
-      "Method"
-    ],
-    [
-      "checkEditing",
-      "Method"
-    ],
-    [
-      "createPage",
-      "Method"
-    ],
-    [
-      "deletePage",
-      "Method"
-    ],
-    [
-      "editBlock",
-      "Method"
-    ],
-    [
-      "exitEditingMode",
-      "Method"
-    ],
-    [
-      "getAllPages",
-      "Method"
-    ],
-    [
-      "getBlock",
-      "Method"
-    ],
-    [
-      "getBlockProperties",
-      "Method"
-    ],
-    [
-      "getBlockProperty",
-      "Method"
-    ],
-    [
-      "getCurrentBlock",
-      "Method"
-    ],
-    [
-      "getCurrentPage",
-      "Method"
-    ],
-    [
-      "getCurrentPageBlocksTree",
-      "Method"
-    ],
-    [
-      "getEditingBlockContent",
-      "Method"
-    ],
-    [
-      "getEditingCursorPosition",
-      "Method"
-    ],
-    [
-      "getNextSiblingBlock",
-      "Method"
-    ],
-    [
-      "getPage",
-      "Method"
-    ],
-    [
-      "getPageBlocksTree",
-      "Method"
-    ],
-    [
-      "getPageLinkedReferences",
-      "Method"
-    ],
-    [
-      "getPagesFromNamespace",
-      "Method"
-    ],
-    [
-      "getPagesTreeFromNamespace",
-      "Method"
-    ],
-    [
-      "getPreviousSiblingBlock",
-      "Method"
-    ],
-    [
-      "getSelectedBlocks",
-      "Method"
-    ],
-    [
-      "insertAtEditingCursor",
-      "Method"
-    ],
-    [
-      "insertBatchBlock",
-      "Method"
-    ],
-    [
-      "insertBlock",
-      "Method"
-    ],
-    [
-      "moveBlock",
-      "Method"
-    ],
-    [
       "openInRightSidebar",
-      "Method"
+      "Property"
     ],
     [
       "prependBlockInPage",
-      "Method"
+      "Property"
     ],
     [
       "registerBlockContextMenuItem",
-      "Method"
+      "Property"
+    ],
+    [
+      "registerHighlightContextMenuItem",
+      "Property"
     ],
     [
       "registerSlashCommand",
-      "Method"
+      "Property"
     ],
     [
       "removeBlock",
-      "Method"
+      "Property"
     ],
     [
       "removeBlockProperty",
-      "Method"
+      "Property"
     ],
     [
       "renamePage",
-      "Method"
+      "Property"
     ],
     [
       "restoreEditingCursor",
-      "Method"
+      "Property"
+    ],
+    [
+      "saveFocusedCodeEditorContent",
+      "Property"
     ],
     [
       "scrollToBlockInPage",
-      "Method"
+      "Property"
+    ],
+    [
+      "selectBlock",
+      "Property"
     ],
     [
       "setBlockCollapsed",
-      "Method"
+      "Property"
     ],
     [
       "updateBlock",
-      "Method"
+      "Property"
     ],
     [
       "upsertBlockProperty",
-      "Method"
+      "Property"
     ]
   ],
   "DB": [
+    [
+      "datascriptQuery",
+      "Property"
+    ],
     [
       "onChanged",
       "Property"
     ],
     [
-      "datascriptQuery",
-      "Method"
+      "q",
+      "Property"
     ],
     [
       "onBlockChanged",
-      "Method"
-    ],
-    [
-      "q",
       "Method"
     ]
   ],
   "Git": [
     [
       "execCommand",
-      "Method"
+      "Property"
     ],
     [
       "loadIgnoreFile",
-      "Method"
+      "Property"
     ],
     [
       "saveIgnoreFile",
-      "Method"
+      "Property"
     ]
   ],
   "UI": [
     [
       "closeMsg",
-      "Method"
+      "Property"
     ],
     [
       "showMsg",
-      "Method"
+      "Property"
     ]
   ],
   "Assets": [
     [
       "listFilesOfCurrentGraph",
+      "Method"
+    ],
+    [
+      "makeSandboxStorage",
       "Method"
     ]
   ],

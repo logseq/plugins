@@ -2,26 +2,26 @@ import { NextPage } from 'next'
 import { Description, DescriptionHeader } from '@/components/Description'
 import { Discuss } from '@/components/Discuss'
 
-const q: NextPage = () => {
+const saveFocusedCodeEditorContent: NextPage = () => {
   return (
       <div className="main-page-content">
         <DescriptionHeader
-          ns="DB"
-          name="q"
+          ns="Editor"
+          name="saveFocusedCodeEditorContent"
          />
 
         <Description
-          ns="DB"
-          name="q"
+          ns="Editor"
+          name="saveFocusedCodeEditorContent"
           comment=""
         />
 
        <Discuss
-          ns="DB"
-          name="q"
+          ns="Editor"
+          name="saveFocusedCodeEditorContent"
        />
       </div>
   )
 }
 
-export default q
+export default saveFocusedCodeEditorContent
