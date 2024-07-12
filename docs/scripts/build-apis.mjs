@@ -5,7 +5,7 @@ import mustache from 'mustache'
 const ROOT = path.resolve('..')
 const PAGES_ROOT = path.resolve('../pages')
 const LS_ROOT = path.join(PAGES_ROOT, 'logseq')
-const API_FILE = path.resolve('../../apis/out.json')
+const API_FILE = path.resolve('../../out.json')
 const TEMPLATE_PAGE = path.join(PAGES_ROOT, '_page.tpl')
 
 const apisData = JSON.parse(fs.readFileSync(API_FILE).toString())
