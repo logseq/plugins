@@ -34,7 +34,7 @@ function getNsKey (name) {
 function shouldIgnoreItem (name) {
   return name &&
     (name.startsWith('_') ||
-      ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
+      ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets', 'Request',
         'FileStorage', 'Experiments',
         'emit', 'on', 'off', 'once', 'listeners', 'listenerCount',
         'eventNames', 'addListener', 'removeListener', 'removeAllListeners'
