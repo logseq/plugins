@@ -62,7 +62,7 @@ function hideElements () {
 
       // hide tsd-parameters
       ;[
-        it.querySelector('.warning').remove(),
+        it.querySelector('.warning')?.remove(),
       ].forEach(it => it && hide(it))
 
       // apply size of body
