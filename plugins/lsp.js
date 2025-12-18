@@ -16,13 +16,14 @@ function showVisibility (el) {
 
 function hideElements () {
   [
-    '.col-content > .tsd-panel',
-    '.container-main .col-menu.menu-highlight',
-    '.container-main > .col-content > .tsd-sources',
-    '.tsd-page-title',
+    '.col-sidebar',
     '.tsd-page-toolbar',
-    '.tsd-index-group',
-    '.tsd-hierarchy'
+    'footer', '.tsd-anchor-link',
+    '.col-content > .tsd-page-title',
+    '.col-content > .tsd-signature',
+    '.col-content > .tsd-sources',
+    '.col-content > .tsd-index-group',
+    '.col-content > .tsd-accordion > .tsd-accordion-summary',
   ].forEach(selector => {
     const els = document.querySelectorAll(selector)
     if (!els) return
@@ -30,17 +31,6 @@ function hideElements () {
       hide(it)
     })
   })
-
-  const panelThs = document.querySelectorAll('.tsd-panel-group > h2')
-  panelThs.forEach(it => {
-    it.style.display = 'none'
-  })
-
-  const footerEl = [...document.querySelectorAll('body > .container')].pop()
-  footerEl.style.display = 'none'
-
-  const genEl = document.querySelector('.tsd-generator')
-  genEl.style.display = 'none'
 
   // region hide all-of-other panels
   const hashId = window.location.hash.replace('#', '')
@@ -52,8 +42,8 @@ function hideElements () {
 
   const memberEls = document.querySelectorAll('.tsd-member')
   memberEls.forEach(it => {
-    const anchorEl = it.children.item(0)
-    if (!anchorEl || anchorEl.tagName?.toLowerCase() !== 'a') {
+    const anchorEl = it.querySelector('.tsd-anchor-link')
+    if (!anchorEl) {
       console.error('[Error anchorEl]', it)
       return
     }
@@ -71,11 +61,8 @@ function hideElements () {
       it.style.marginTop = '0px'
 
       // hide tsd-parameters
-      ;[it.querySelector('.tsd-parameters'),
-        it.querySelector('.tsd-parameters-title'),
-        it.querySelector('.tsd-returns-title'),
-        it.querySelector('.tsd-type-parameters-title'),
-        it.querySelector('.tsd-type-parameters')
+      ;[
+        it.querySelector('.warning').remove(),
       ].forEach(it => it && hide(it))
 
       // apply size of body
@@ -85,8 +72,8 @@ function hideElements () {
         {
           height: height + 'px',
           overflow: 'hidden',
-          background: 'transparent'
-        }
+          background: 'transparent',
+        },
       )
 
       // apply link top open in new panel
@@ -103,42 +90,27 @@ function hideElements () {
   return targetSize
 }
 
-function adjustElements () {
-  const panels = document.querySelectorAll('.tsd-panel')
-
-  Array.from(panels).forEach(it => {
-    it.style.boxShadow = 'none'
-    it.style.background = 'transparent'
-  })
-
-  const main = document.querySelector('.container-main .col-content')
-  main.style.width = 'auto'
-}
-
 // entry
 (function () {
-  if (true || top !== this) {
+  const debug = location.href.includes('lsp-debug')
+  if (debug || top !== this) {
     hideVisibility(document.documentElement)
 
     const run = (e) => {
-      if (true) {
+      try {
+        const targetSize = hideElements()
 
-        try {
-          const targetSize = hideElements()
-          adjustElements()
-
-          top.postMessage(JSON.stringify({
-            type: 'size',
-            payload: targetSize
-          }), '*')
-        } catch (e) {
-          console.error('LSP:', e)
-        }
-
-        setTimeout(() => {
-          showVisibility(document.documentElement)
-        }, 50)
+        top.postMessage(JSON.stringify({
+          type: 'size',
+          payload: targetSize,
+        }), '*')
+      } catch (e) {
+        console.error('LSP:', e)
       }
+
+      setTimeout(() => {
+        showVisibility(document.documentElement)
+      }, 50)
     }
 
     document.addEventListener('DOMContentLoaded', () => {

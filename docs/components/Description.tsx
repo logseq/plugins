@@ -64,7 +64,7 @@ export function DescriptionHeader (
 export function Description (
   props: DescriptionProps
 ) {
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(true)
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const readyRef = useRef(false)
   const colorScheme = useColorScheme();
