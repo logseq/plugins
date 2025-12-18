@@ -13,8 +13,7 @@ const datascriptQuery: NextPage = () => {
         <Description
           ns="DB"
           name="datascriptQuery"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

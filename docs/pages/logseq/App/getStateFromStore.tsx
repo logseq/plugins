@@ -13,8 +13,7 @@ const getStateFromStore: NextPage = () => {
         <Description
           ns="App"
           name="getStateFromStore"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

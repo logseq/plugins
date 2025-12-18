@@ -13,8 +13,7 @@ const registerCommandShortcut: NextPage = () => {
         <Description
           ns="App"
           name="registerCommandShortcut"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

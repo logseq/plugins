@@ -13,8 +13,7 @@ const getPageLinkedReferences: NextPage = () => {
         <Description
           ns="Editor"
           name="getPageLinkedReferences"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

@@ -13,8 +13,7 @@ const registerBlockContextMenuItem: NextPage = () => {
         <Description
           ns="Editor"
           name="registerBlockContextMenuItem"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

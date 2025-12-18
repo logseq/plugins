@@ -13,7 +13,7 @@ const settings: NextPage = () => {
         <Description
           ns="."
           name="settings"
-          comment="The plugin user settings"
+          comment=""
         />
 
        <Discuss

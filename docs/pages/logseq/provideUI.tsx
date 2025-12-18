@@ -13,8 +13,7 @@ const provideUI: NextPage = () => {
         <Description
           ns="."
           name="provideUI"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

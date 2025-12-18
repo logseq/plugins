@@ -2,10 +2,10 @@ import * as fs from 'fs'
 import * as path from 'path'
 import mustache from 'mustache'
 
-const ROOT = path.resolve('..')
-const PAGES_ROOT = path.resolve('../pages')
+const ROOT = path.resolve('.')
+const PAGES_ROOT = path.join(ROOT, 'pages')
 const LS_ROOT = path.join(PAGES_ROOT, 'logseq')
-const API_FILE = path.resolve('../../apis/out.json')
+const API_FILE = path.resolve('../out.json')
 const TEMPLATE_PAGE = path.join(PAGES_ROOT, '_page.tpl')
 
 const apisData = JSON.parse(fs.readFileSync(API_FILE).toString())
@@ -20,7 +20,7 @@ const apiMaps = {
   'IUIProxy': {},
   'IAssetsProxy': {},
 
-  'FileStorage': {}
+  'FileStorage': {},
 }
 
 function getNsKey (name) {
@@ -34,10 +34,11 @@ function getNsKey (name) {
 function shouldIgnoreItem (name) {
   return name &&
     (name.startsWith('_') ||
-      ['Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
+      [
+        'Editor', 'DB', 'Git', 'App', 'UI', 'Assets',
         'FileStorage', 'Experiments',
         'emit', 'on', 'off', 'once', 'listeners', 'listenerCount',
-        'eventNames', 'addListener', 'removeListener', 'removeAllListeners'
+        'eventNames', 'addListener', 'removeListener', 'removeAllListeners',
       ].some(it => {
         return name.toLowerCase() === it.toLowerCase()
       }))
@@ -86,20 +87,18 @@ function build () {
   }
 
   // region build navigate data
-  const navigateData = Object.entries(apiMaps)
-    .reduce((acc, [name, v]) => {
-      const ns = (rootKey === name) ? 'logseq' : getNsKey(name)
-      const values = Object.entries(v)
-        .reduce((acc, [k, p]) => {
-          if (!shouldIgnoreItem(k)) {
-            acc.push([k, p.kindString])
-          }
-          return acc
-        }, [])
-        // .filter(name => !shouldIgnoreItem(name))
-      acc[ns] = values
+  const navigateData = Object.entries(apiMaps).reduce((acc, [name, v]) => {
+    const ns = (rootKey === name) ? 'logseq' : getNsKey(name)
+    const values = Object.entries(v).reduce((acc, [k, p]) => {
+      if (!shouldIgnoreItem(k)) {
+        acc.push([k, p.kindString])
+      }
       return acc
-    }, {})
+    }, [])
+    // .filter(name => !shouldIgnoreItem(name))
+    acc[ns] = values
+    return acc
+  }, {})
 
   const fileDest = path.join(ROOT, 'components', 'Sidebar.json')
   const fileContent = JSON.stringify(navigateData, null, 2)
@@ -110,7 +109,7 @@ function build () {
     let ns = ''
     const nsDest = path.join(
       PAGES_ROOT, 'logseq',
-      (ns = (rootKey === k) ? '.' : getNsKey(k))
+      (ns = (rootKey === k) ? '.' : getNsKey(k)),
     )
 
     if (!fs.existsSync(nsDest)) {

@@ -13,7 +13,7 @@ const baseInfo: NextPage = () => {
         <Description
           ns="."
           name="baseInfo"
-          comment="The plugin configurations from package.json"
+          comment=""
         />
 
        <Discuss

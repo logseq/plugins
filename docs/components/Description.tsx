@@ -88,6 +88,7 @@ export function Description (
       if (typeof data !== 'string') return
 
       try {
+        setLoaded(true)
         data = JSON.parse(data)
         if (data?.type !== 'size') return
         const height = data.payload?.height
@@ -95,7 +96,6 @@ export function Description (
         iframeRef.current!.style.height = height + 'px'
         iframeRef.current!.style.visibility = 'visible'
         iframeRef.current!.style.colorScheme = colorScheme.scheme
-        setLoaded(true)
       } catch (e) {
         console.log(e)
       }

@@ -2,427 +2,631 @@
   "logseq": [
     [
       "baseInfo",
-      "Property"
-    ],
-    [
-      "caller",
-      "Property"
-    ],
-    [
-      "connected",
-      "Property"
-    ],
-    [
-      "isMainUIVisible",
-      "Property"
-    ],
-    [
-      "settings",
-      "Property"
+      null
     ],
     [
       "beforeunload",
-      "Method"
+      null
+    ],
+    [
+      "caller",
+      null
+    ],
+    [
+      "connected",
+      null
+    ],
+    [
+      "isMainUIVisible",
+      null
+    ],
+    [
+      "Request",
+      null
+    ],
+    [
+      "settings",
+      null
     ],
     [
       "hideMainUI",
-      "Method"
+      null
     ],
     [
       "hideSettingsUI",
-      "Method"
+      null
     ],
     [
       "onSettingsChanged",
-      "Method"
+      null
     ],
     [
       "provideModel",
-      "Method"
+      null
     ],
     [
       "provideStyle",
-      "Method"
+      null
     ],
     [
       "provideTheme",
-      "Method"
+      null
     ],
     [
       "provideUI",
-      "Method"
+      null
     ],
     [
       "ready",
-      "Method"
+      null
     ],
     [
       "resolveResourceFullUrl",
-      "Method"
+      null
     ],
     [
       "setMainUIAttrs",
-      "Method"
+      null
     ],
     [
       "setMainUIInlineStyle",
-      "Method"
+      null
     ],
     [
       "showMainUI",
-      "Method"
+      null
     ],
     [
       "showSettingsUI",
-      "Method"
+      null
     ],
     [
       "toggleMainUI",
-      "Method"
+      null
     ],
     [
       "updateSettings",
-      "Method"
+      null
     ],
     [
       "useSettingsSchema",
-      "Method"
+      null
     ]
   ],
   "App": [
     [
-      "onBlockRendererSlotted",
-      "Property"
+      "checkCurrentIsDbGraph",
+      null
     ],
     [
-      "onCurrentGraphChanged",
-      "Property"
+      "clearRightSidebarBlocks",
+      null
     ],
     [
-      "onMacroRendererSlotted",
-      "Property"
-    ],
-    [
-      "onPageHeadActionsSlotted",
-      "Property"
-    ],
-    [
-      "onRouteChanged",
-      "Property"
-    ],
-    [
-      "onSidebarVisibleChanged",
-      "Property"
-    ],
-    [
-      "onThemeModeChanged",
-      "Property"
+      "createTemplate",
+      null
     ],
     [
       "execGitCommand",
-      "Method"
+      null
+    ],
+    [
+      "existTemplate",
+      null
     ],
     [
       "getCurrentGraph",
-      "Method"
+      null
+    ],
+    [
+      "getCurrentGraphConfigs",
+      null
+    ],
+    [
+      "getCurrentGraphFavorites",
+      null
+    ],
+    [
+      "getCurrentGraphRecent",
+      null
+    ],
+    [
+      "getCurrentGraphTemplates",
+      null
+    ],
+    [
+      "getExternalPlugin",
+      null
     ],
     [
       "getInfo",
-      "Method"
+      null
     ],
     [
       "getStateFromStore",
-      "Method"
+      null
+    ],
+    [
+      "getTemplate",
+      null
     ],
     [
       "getUserConfigs",
-      "Method"
+      null
     ],
     [
       "getUserInfo",
-      "Method"
+      null
+    ],
+    [
+      "insertTemplate",
+      null
     ],
     [
       "invokeExternalCommand",
-      "Method"
+      null
+    ],
+    [
+      "invokeExternalPlugin",
+      null
+    ],
+    [
+      "onAfterCommandInvoked",
+      null
+    ],
+    [
+      "onBeforeCommandInvoked",
+      null
+    ],
+    [
+      "onBlockRendererSlotted",
+      null
+    ],
+    [
+      "onCurrentGraphChanged",
+      null
+    ],
+    [
+      "onGraphAfterIndexed",
+      null
+    ],
+    [
+      "onMacroRendererSlotted",
+      null
+    ],
+    [
+      "onPageHeadActionsSlotted",
+      null
+    ],
+    [
+      "onRouteChanged",
+      null
+    ],
+    [
+      "onSidebarVisibleChanged",
+      null
+    ],
+    [
+      "onThemeChanged",
+      null
+    ],
+    [
+      "onThemeModeChanged",
+      null
+    ],
+    [
+      "onTodayJournalCreated",
+      null
     ],
     [
       "openExternalLink",
-      "Method"
+      null
     ],
     [
       "pushState",
-      "Method"
-    ],
-    [
-      "queryElementById",
-      "Method"
-    ],
-    [
-      "queryElementRect",
-      "Method"
+      null
     ],
     [
       "quit",
-      "Method"
+      null
     ],
     [
       "registerCommand",
-      "Method"
+      null
     ],
     [
       "registerCommandPalette",
-      "Method"
+      null
     ],
     [
       "registerCommandShortcut",
-      "Method"
+      null
     ],
     [
       "registerPageMenuItem",
-      "Method"
+      null
     ],
     [
       "registerUIItem",
-      "Method"
+      null
     ],
     [
       "relaunch",
-      "Method"
+      null
+    ],
+    [
+      "removeTemplate",
+      null
     ],
     [
       "replaceState",
-      "Method"
+      null
+    ],
+    [
+      "setCurrentGraphConfigs",
+      null
     ],
     [
       "setFullScreen",
-      "Method"
+      null
     ],
     [
       "setLeftSidebarVisible",
-      "Method"
+      null
     ],
     [
       "setRightSidebarVisible",
-      "Method"
+      null
+    ],
+    [
+      "setStateFromStore",
+      null
     ],
     [
       "setZoomFactor",
-      "Method"
+      null
     ],
     [
-      "showMsg",
-      "Method"
+      "registerSearchService",
+      null
     ]
   ],
   "Editor": [
     [
-      "onInputSelectionEnd",
-      "Property"
+      "addBlockTag",
+      null
+    ],
+    [
+      "addTagExtends",
+      null
+    ],
+    [
+      "addTagProperty",
+      null
     ],
     [
       "appendBlockInPage",
-      "Method"
+      null
     ],
     [
       "checkEditing",
-      "Method"
+      null
+    ],
+    [
+      "clearSelectedBlocks",
+      null
+    ],
+    [
+      "createJournalPage",
+      null
     ],
     [
       "createPage",
-      "Method"
+      null
+    ],
+    [
+      "createTag",
+      null
     ],
     [
       "deletePage",
-      "Method"
+      null
     ],
     [
       "editBlock",
-      "Method"
+      null
     ],
     [
       "exitEditingMode",
-      "Method"
+      null
     ],
     [
       "getAllPages",
-      "Method"
+      null
+    ],
+    [
+      "getAllProperties",
+      null
+    ],
+    [
+      "getAllTags",
+      null
     ],
     [
       "getBlock",
-      "Method"
+      null
     ],
     [
       "getBlockProperties",
-      "Method"
+      null
     ],
     [
       "getBlockProperty",
-      "Method"
+      null
     ],
     [
       "getCurrentBlock",
-      "Method"
+      null
     ],
     [
       "getCurrentPage",
-      "Method"
+      null
     ],
     [
       "getCurrentPageBlocksTree",
-      "Method"
+      null
     ],
     [
       "getEditingBlockContent",
-      "Method"
+      null
     ],
     [
       "getEditingCursorPosition",
-      "Method"
+      null
     ],
     [
       "getNextSiblingBlock",
-      "Method"
+      null
     ],
     [
       "getPage",
-      "Method"
+      null
     ],
     [
       "getPageBlocksTree",
-      "Method"
+      null
     ],
     [
       "getPageLinkedReferences",
-      "Method"
+      null
+    ],
+    [
+      "getPageProperties",
+      null
     ],
     [
       "getPagesFromNamespace",
-      "Method"
+      null
     ],
     [
       "getPagesTreeFromNamespace",
-      "Method"
+      null
     ],
     [
       "getPreviousSiblingBlock",
-      "Method"
+      null
+    ],
+    [
+      "getProperty",
+      null
     ],
     [
       "getSelectedBlocks",
-      "Method"
+      null
+    ],
+    [
+      "getTag",
+      null
+    ],
+    [
+      "getTagObjects",
+      null
     ],
     [
       "insertAtEditingCursor",
-      "Method"
+      null
     ],
     [
       "insertBatchBlock",
-      "Method"
+      null
     ],
     [
       "insertBlock",
-      "Method"
+      null
+    ],
+    [
+      "isPageBlock",
+      null
     ],
     [
       "moveBlock",
-      "Method"
+      null
+    ],
+    [
+      "newBlockUUID",
+      null
+    ],
+    [
+      "onInputSelectionEnd",
+      null
     ],
     [
       "openInRightSidebar",
-      "Method"
+      null
+    ],
+    [
+      "openPDFViewer",
+      null
     ],
     [
       "prependBlockInPage",
-      "Method"
+      null
     ],
     [
       "registerBlockContextMenuItem",
-      "Method"
+      null
+    ],
+    [
+      "registerHighlightContextMenuItem",
+      null
     ],
     [
       "registerSlashCommand",
-      "Method"
+      null
     ],
     [
       "removeBlock",
-      "Method"
+      null
+    ],
+    [
+      "removeBlockIcon",
+      null
     ],
     [
       "removeBlockProperty",
-      "Method"
+      null
+    ],
+    [
+      "removeBlockTag",
+      null
+    ],
+    [
+      "removeProperty",
+      null
+    ],
+    [
+      "removeTagExtends",
+      null
+    ],
+    [
+      "removeTagProperty",
+      null
     ],
     [
       "renamePage",
-      "Method"
+      null
     ],
     [
       "restoreEditingCursor",
-      "Method"
+      null
+    ],
+    [
+      "saveFocusedCodeEditorContent",
+      null
     ],
     [
       "scrollToBlockInPage",
-      "Method"
+      null
+    ],
+    [
+      "selectBlock",
+      null
     ],
     [
       "setBlockCollapsed",
-      "Method"
+      null
+    ],
+    [
+      "setBlockIcon",
+      null
     ],
     [
       "updateBlock",
-      "Method"
+      null
     ],
     [
       "upsertBlockProperty",
-      "Method"
+      null
+    ],
+    [
+      "upsertProperty",
+      null
     ]
   ],
   "DB": [
     [
-      "onChanged",
-      "Property"
-    ],
-    [
       "datascriptQuery",
-      "Method"
+      null
     ],
     [
-      "onBlockChanged",
-      "Method"
+      "onChanged",
+      null
     ],
     [
       "q",
-      "Method"
+      null
+    ],
+    [
+      "onBlockChanged",
+      null
     ]
   ],
   "Git": [
     [
       "execCommand",
-      "Method"
+      null
     ],
     [
       "loadIgnoreFile",
-      "Method"
+      null
     ],
     [
       "saveIgnoreFile",
-      "Method"
+      null
     ]
   ],
   "UI": [
     [
+      "checkSlotValid",
+      null
+    ],
+    [
       "closeMsg",
-      "Method"
+      null
+    ],
+    [
+      "queryElementById",
+      null
+    ],
+    [
+      "queryElementRect",
+      null
+    ],
+    [
+      "resolveThemeCssPropsVals",
+      null
     ],
     [
       "showMsg",
-      "Method"
+      null
     ]
   ],
   "Assets": [
     [
+      "builtInOpen",
+      null
+    ],
+    [
       "listFilesOfCurrentGraph",
-      "Method"
+      null
+    ],
+    [
+      "makeSandboxStorage",
+      null
+    ],
+    [
+      "makeUrl",
+      null
     ]
   ],
   "FileStorage": []

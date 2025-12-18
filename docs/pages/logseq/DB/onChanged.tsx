@@ -13,7 +13,7 @@ const onChanged: NextPage = () => {
         <Description
           ns="DB"
           name="onChanged"
-          comment="Hook all transaction data of DB"
+          comment=""
         />
 
        <Discuss

@@ -71,6 +71,7 @@ a {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   max-width: calc(var(--lsp-content-max-width) - 50px);
+  padding-top: 30px;
 }
 
 .main-description iframe {

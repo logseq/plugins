@@ -13,8 +13,7 @@ const onBlockChanged: NextPage = () => {
         <Description
           ns="DB"
           name="onBlockChanged"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

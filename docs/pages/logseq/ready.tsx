@@ -13,8 +13,7 @@ const ready: NextPage = () => {
         <Description
           ns="."
           name="ready"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

@@ -13,8 +13,7 @@ const q: NextPage = () => {
         <Description
           ns="DB"
           name="q"
-          comment="
-"
+          comment=""
         />
 
        <Discuss

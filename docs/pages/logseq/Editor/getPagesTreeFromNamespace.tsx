@@ -13,8 +13,7 @@ const getPagesTreeFromNamespace: NextPage = () => {
         <Description
           ns="Editor"
           name="getPagesTreeFromNamespace"
-          comment="
-"
+          comment=""
         />
 
        <Discuss
