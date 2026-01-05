@@ -314,7 +314,7 @@ export function Sidebar () {
                   <Link key={name} href={href} scroll={false}>
                     <dd className={`flex items-center p-1 ${global?.location?.href?.endsWith(href) ? 'active' : ''}`}
                         id={k + '-' + name}>
-                      <ItemLabel name={name} kind={kind}/>
+                      <ItemLabel name={name!} kind={kind!}/>
                     </dd>
                   </Link>)
               })}
